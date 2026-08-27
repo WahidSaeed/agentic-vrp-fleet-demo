@@ -3,5 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "description": "Synthetic conference demo - no real data.",
-  "main": "index.js"
+  "main": "index.js",
+  "dependencies": {
+    "neo4j-driver": "^5.28.1",
+    "highs": "^1.15.2"
+  }
 }

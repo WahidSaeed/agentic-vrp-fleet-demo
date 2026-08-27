@@ -27,6 +27,20 @@ export default function DispatcherView() {
               {p.affectedStops} stops · ~{p.estDelayMin} min added
               {p.resolved ? ` · ${p.resolved}` : p.requiresApproval ? " · HIGH IMPACT" : " · auto-approved"}
             </p>
+            {p.decisionTrace && p.decisionTrace.solver && (
+              <table className="trace">
+                <tbody>
+                  <tr><td>road graph</td><td>{p.decisionTrace.graphSource}</td></tr>
+                  {p.decisionTrace.closedSegments != null && (
+                    <tr><td>segments closed</td><td>{p.decisionTrace.closedSegments}</td></tr>
+                  )}
+                  {p.decisionTrace.baselineMin != null && (
+                    <tr><td>planned vs re-planned</td><td>{p.decisionTrace.baselineMin} → {p.decisionTrace.replannedMin} min</td></tr>
+                  )}
+                  <tr><td>optimiser</td><td>{p.decisionTrace.solver}</td></tr>
+                </tbody>
+              </table>
+            )}
             {pending && (
               <div className="actions">
                 <button className="approve" onClick={() => approve(p.approvalId)}>Approve &amp; dispatch</button>

@@ -97,6 +97,24 @@ Resources:
         - { Key: Project, Value: aws-community-day-demo }
         - { Key: Demo, Value: fleet }
 
+  # Neo4j (road-graph) connection secret. Created with a disabled placeholder so
+  # the stack deploys with no external dependency; the re-planner uses the bundled
+  # backend/agent-invoker/road-graph.json until this holds real AuraDB Free
+  # credentials. deploy.sh fills it from NEO4J_URI / NEO4J_PASSWORD and then runs
+  # scripts/build-graph.js to load the graph. DeletionPolicy: Delete -> gone with
+  # the stack.
+  Neo4jSecret:
+    Type: AWS::SecretsManager::Secret
+    DeletionPolicy: Delete
+    UpdateReplacePolicy: Delete
+    Properties:
+      Name: !Sub "${DemoName}-neo4j"
+      Description: AuraDB Free connection for the road-graph re-planner (synthetic demo).
+      SecretString: '{"uri":"","user":"neo4j","password":"","database":"neo4j"}'
+      Tags:
+        - { Key: Project, Value: aws-community-day-demo }
+        - { Key: Demo, Value: fleet }
+
   ConnectionsTable:
     Type: AWS::DynamoDB::Table
     DeletionPolicy: Delete
@@ -299,11 +317,13 @@ Resources:
       FunctionName: !Sub "${DemoName}-agent-invoker"
       Handler: index.handler
       CodeUri: ../backend/agent-invoker/
-      Timeout: 60
+      Timeout: 90
+      MemorySize: 512   # HiGHS (WASM) + neo4j-driver
       Environment:
         Variables:
           WS_ENDPOINT: !Sub "https://${WebSocketApi}.execute-api.${AWS::Region}.amazonaws.com/demo"
           BEDROCK_MODEL_ID: !Ref BedrockModelId
+          NEO4J_SECRET_ARN: !Ref Neo4jSecret
       Role: !GetAtt AgentInvokerRole.Arn
   AgentInvokerRole:
     Type: AWS::IAM::Role
@@ -325,6 +345,7 @@ Resources:
                   - !Sub "arn:aws:bedrock:*::foundation-model/*"
                   - !Sub "arn:aws:bedrock:*:${AWS::AccountId}:inference-profile/*"
               - { Effect: Allow, Action: [dynamodb:GetItem, dynamodb:Scan], Resource: !GetAtt VehicleStateTable.Arn }
+              - { Effect: Allow, Action: [secretsmanager:GetSecretValue], Resource: !Ref Neo4jSecret }
               - { Effect: Allow, Action: [dynamodb:PutItem], Resource: !GetAtt PendingApprovalsTable.Arn }
               - { Effect: Allow, Action: [dynamodb:Scan], Resource: !GetAtt ConnectionsTable.Arn }
               - { Effect: Allow, Action: [dynamodb:DeleteItem], Resource: !GetAtt ConnectionsTable.Arn }
@@ -484,3 +505,9 @@ Outputs:
   DemoWsToken:
     Description: Short-lived demo token the frontend must present on $connect.
     Value: !Ref DemoName
+  Neo4jSecretArn:
+    Description: >
+      Secret holding the AuraDB Free road-graph connection. Fill it (deploy.sh does
+      this from NEO4J_URI / NEO4J_PASSWORD) to move the re-planner's graph from the
+      bundled JSON to Neo4j.
+    Value: !Ref Neo4jSecret

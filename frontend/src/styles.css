@@ -30,6 +30,10 @@ body { font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, san
 .card.alert { border-color: #fca5a5; background: #fef2f2; }
 .card h3 { margin: 0 0 6px; font-size: 15px; }
 .rationale { font-size: 14px; }
+.trace { width: 100%; border-collapse: collapse; margin: 8px 0 2px; font-size: 12px; }
+.trace td { padding: 2px 0; color: #475569; }
+.trace td:first-child { color: #94a3b8; padding-right: 10px; white-space: nowrap; }
+.trace td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
 .muted { color: #64748b; font-size: 12px; margin: 4px 0 0; }
 
 .actions { display: flex; gap: 8px; margin-top: 10px; }

@@ -52,6 +52,26 @@ STREAM=$(get_out TelemetryStreamName)
 SITE_BUCKET=$(get_out SiteBucketName)
 DIST_ID=$(get_out SiteDistributionId)
 SITE_URL=$(get_out SiteUrl)
+NEO4J_SECRET_ARN=$(get_out Neo4jSecretArn)
+
+# Optional road-graph in Neo4j. With AuraDB Free creds exported (from the
+# downloaded Neo4j-<id>-Created-*.txt) load them into the secret, push the graph
+# into Aura, and force an agent cold start. Without them the re-planner uses the
+# bundled backend/agent-invoker/road-graph.json and the demo is unaffected.
+if [ -n "${NEO4J_URI:-}" ] && [ -n "${NEO4J_PASSWORD:-}" ]; then
+  echo ">> loading Neo4j credentials into $NEO4J_SECRET_ARN"
+  aws secretsmanager put-secret-value --secret-id "$NEO4J_SECRET_ARN" --region "$REGION" \
+    --secret-string "{\"uri\":\"$NEO4J_URI\",\"user\":\"${NEO4J_USER:-neo4j}\",\"password\":\"$NEO4J_PASSWORD\",\"database\":\"${NEO4J_DATABASE:-neo4j}\"}" >/dev/null
+  echo ">> loading the road graph into Aura (scripts/build-graph.js)"
+  ( cd backend/agent-invoker && npm install --silent --omit=dev )
+  node scripts/build-graph.js
+  echo ">> forcing an agent-invoker cold start"
+  aws lambda update-function-configuration --function-name "${STACK}-agent-invoker" --region "$REGION" \
+    --description "agent-invoker (redeployed $(date -u +%FT%TZ))" >/dev/null
+else
+  echo ">> NEO4J_URI / NEO4J_PASSWORD not set - re-planner uses the bundled road-graph.json"
+  node scripts/build-graph.js
+fi
 
 echo ">> building + publishing frontend to $SITE_BUCKET"
 # .env.production is gitignored; it bakes the live WS endpoint into the bundle so

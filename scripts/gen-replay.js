@@ -60,8 +60,13 @@ for (let s = 0; s < DURATION; s++) {
   if (s === 9) {
     events.push({ at, event: "agent_proposal",
       approvalId, vehicleId: disruptedVehicle,
-      rationale: "Marienstrasse is closed for a street event, blocking the next two stops on this loop. Routing one block east via Luisenstrasse adds about 9 minutes and clears the closure without reordering the remaining deliveries.",
-      affectedStops: 3, estDelayMin: 9, detourWaypoints, requiresApproval: true });
+      rationale: "Marienstrasse is closed for a street event, blocking the next stop on this loop. The re-planner removed the closed segment and re-optimised the next four stops, visiting them in reverse to approach the blocked stop from the far side. Estimated added delay: about 4 minutes.",
+      affectedStops: 4, estDelayMin: 4, detourWaypoints, requiresApproval: true,
+      decisionTrace: {
+        graphSource: "neo4j", closedSegments: 1, stopsConsidered: 4,
+        baselineMin: 8, replannedMin: 12, newOrder: [4, 3, 2, 1],
+        solver: "HiGHS open-TSP MIP",
+      } });
   }
   if (s === 16) {
     events.push({ at, event: "route_update", vehicleId: disruptedVehicle, detourWaypoints, approvalId, autoApplied: false });

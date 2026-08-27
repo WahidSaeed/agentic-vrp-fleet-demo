@@ -30,7 +30,10 @@ live segment at an AWS community event.
                                        │        │                                 │
                                        │        ▼                                 │
                                        │ Lambda: agent-invoker                    │
-                                       │   • Bedrock Converse → re-route + reason │
+                                       │   • pull road graph (Neo4j / bundled)   │
+                                       │   • close disrupted segments            │
+                                       │   • HiGHS MIP → fastest re-ordered route │
+                                       │   • Bedrock Converse → explains the plan │
                                        │   • approval gate → PendingApprovals     │
                                        │   • broadcast agent_proposal (WS)        │
                                        │        │                                 │
@@ -45,8 +48,6 @@ live segment at an AWS community event.
 
 **Deliberate simplifications** (production would differ):
 - Simulator publishes **directly to Kinesis**. Production would use AWS IoT Core.
-- Route graph is a small in-code adjacency list, not Neo4j. Local Docker Neo4j is
-  fine for dev but is intentionally *not* in the CloudFormation template.
 - Orchestration is a plain Lambda chain, not Step Functions.
 - Frontend is a static build on **S3 + CloudFront**, both declared in the template
   so they tear down with `delete-stack`. The hosted page defaults to replay mode;
@@ -54,6 +55,39 @@ live segment at an AWS community event.
   (`npm run dev`) against the same stack.
 - WebSocket auth is a shared short-lived demo token, not IAM/JWT. It is baked into
   the public bundle for `?live` mode — rotate `DemoName` per event.
+
+## The re-planner: graph + MIP + LLM (three distinct jobs)
+
+The word "agentic" here means the agent decides **when and how** to call a graph
+query and an optimiser, then explains the result — not that an LLM guesses a route.
+
+| Component | Job | Where it runs |
+|---|---|---|
+| **Road graph** (`graph.js`) | Junctions + weighted road segments. On a disruption, the segments next to it are removed and a travel-time matrix over the vehicle's remaining stops is computed (Dijkstra). | AuraDB Free — pulled in one Cypher query per disruption (the graph is ~25 nodes). Falls back to the bundled `road-graph.json`. |
+| **Optimiser** (`solve.js`) | The re-plan: an **open-TSP mixed-integer program** — fastest order to still hit every remaining stop, on the graph with the closed segments removed. Binary arc vars + MTZ subtour elimination. | **In-process** via **HiGHS** (WASM, MIT — no solver server, no licence). |
+| **Bedrock** (Converse) | Turns the solver's before/after numbers into the 2-3 sentence rationale read on stage. Explains; does not compute. | `eu.amazon.nova-lite-v1:0` (no use-case form). |
+
+**Layered fallback so the demo never stalls:**
+1. Neo4j graph + HiGHS MIP + Bedrock rationale
+2. Neo4j down → bundled `road-graph.json` + HiGHS MIP + Bedrock
+3. solver/graph error → deterministic canned detour
+4. Bedrock error → templated summary from the solver numbers
+
+### Enabling the Neo4j road graph (optional)
+
+The re-planner works out of the box on the bundled graph. To move it to Neo4j
+(same AuraDB Free instance the AML demo can share — different node labels):
+
+```bash
+NEO4J_URI=neo4j+s://<id>.databases.neo4j.io \
+NEO4J_USER=<id> NEO4J_PASSWORD=<pw> NEO4J_DATABASE=<id> \
+./scripts/deploy.sh
+```
+
+`deploy.sh` loads the creds into the `fleet-demo-neo4j` secret and runs
+`scripts/build-graph.js` to push `:Junction` / `:ROAD` into Aura. Teardown deletes
+the secret; delete the Aura instance from the Neo4j console (free tier also
+auto-deletes after 30 days idle).
 
 **One bootstrap resource outside the template:** `deploy.sh` creates a dedicated,
 private, un-versioned S3 bucket `fleet-demo-artifacts-<account>-<region>` to hold
@@ -67,7 +101,10 @@ owns it, it is tagged `Demo=fleet`, and `teardown.sh` empties and deletes it.
 |---|---|
 | `infra/fleet-demo.yaml` | The entire stack (SAM/CloudFormation). |
 | `backend/stream-processor` | Kinesis-triggered: state + broadcast + agent trigger. |
-| `backend/agent-invoker` | Bedrock reasoning + approval gate. |
+| `backend/agent-invoker` | Road graph → HiGHS MIP re-plan → Bedrock explanation → approval gate. |
+| `backend/agent-invoker/graph.js` | Pulls the road graph from Neo4j (or bundled `road-graph.json`); Dijkstra + travel-time matrix. |
+| `backend/agent-invoker/solve.js` | Open-TSP MIP over the remaining stops, solved in-process with HiGHS. |
+| `scripts/build-graph.js` | Builds `road-graph.json` from the routes; loads it into AuraDB when creds are set. |
 | `backend/dispatcher` | WebSocket `$default` route: approve/reject. |
 | `backend/ws-handlers` | `$connect` (token check) / `$disconnect`. |
 | `simulator/` | Local vehicle telemetry + `disrupt` command. |
@@ -125,9 +162,9 @@ as live mode — visually identical. Regenerate the log with `node scripts/gen-r
 | 0:00 | Open `/driver`. 8 vehicles moving on the Berlin map. | "Synthetic fleet, live telemetry through Kinesis." |
 | 0:40 | Switch to `/dispatcher`, show empty approval queue. | "A human still owns high-impact calls." |
 | 1:10 | Trigger disruption: `node simulator/index.js disrupt --stream <name> --vehicle veh-3 --kind road_closure` | Red pulse appears on the map; vehicle marker turns red. |
-| 1:25 | Stream processor fires the agent. | Driver view: "Disruption detected". |
-| 1:40 | Agent proposal arrives (Bedrock rationale). | Dispatcher: rationale text + "HIGH IMPACT · 3 stops · ~9 min". |
-| 2:10 | Read the rationale aloud — **the explainability moment**. | 2–3 sentence plain-language re-route reason. |
+| 1:25 | Stream processor fires the agent: graph query → MIP solve → Bedrock. | Driver view: "Disruption detected". |
+| 1:40 | Agent proposal arrives. | Dispatcher: rationale + decision trace (graph source, segments closed, planned→re-planned minutes, "HiGHS open-TSP MIP") + "HIGH IMPACT". |
+| 2:10 | Read the rationale aloud, point at the trace — **the explainability moment**. | Plain-language reason, backed by the solver's before/after numbers. |
 | 2:30 | Click **Approve & dispatch**. | Orange dashed detour draws on the map; red clears. |
 | 2:50 | Switch to `/driver` — detour is live there too. | "Same broadcast, every client." |
 | 3:10 | Recap the loop: detect → reason → gate → dispatch, < 30 s. | Point at the architecture slide. |
@@ -143,6 +180,7 @@ Full disruption → re-plan → approval → dispatch completes well under 30 se
 |---|---|---|
 | **Conference Wi-Fi drops** | WS status shows `reconnecting`; map freezes. | Stop talking to AWS: kill the dev server, set `VITE_DEMO_MODE=replay` in `.env.local`, `npm run dev`, reload. Replay is visually identical. Practise this switch — it's ~15 s. |
 | **AWS throttling / slow Bedrock** | Proposal takes >5 s or never arrives. | The agent Lambda has a deterministic fallback proposal — it will still arrive with a canned-but-sensible rationale. If nothing comes, re-run the `disrupt` command; it's idempotent for the demo. |
+| **Neo4j / AuraDB unreachable** | `[graph] Aura unavailable, using bundled road-graph.json` in the logs; trace shows `road graph: bundled`. | Nothing to do — the MIP re-plan runs identically on the bundled graph. |
 | **Browser refresh mid-demo** | State resets, queue empty. | The driver view rebuilds from the next position broadcasts within ~2 s. If a proposal was mid-flight, re-run `disrupt`. In replay mode just wait — the loop restarts every ~40 s. |
 | **A view throws** | "View hiccup — recovering" card. | Click "Reload view"; the error boundary keeps the rest of the app alive. |
 
@@ -159,6 +197,8 @@ On-demand everything, no idle hourly charges:
 | Lambda | $0 | free-tier / pennies |
 | API Gateway WebSocket | $0 | pennies |
 | Bedrock (Amazon Nova Lite) | $0 | well under $0.01 per proposal |
+| Secrets Manager (Neo4j creds) | ~$0.40/mo per secret | — |
+| AuraDB Free (external, not in stack) | $0 | $0 |
 | CloudWatch Logs (3-day retention) | negligible | negligible |
 
 **Estimate: under $2/month if left running, ~$0 once torn down.** The only resource

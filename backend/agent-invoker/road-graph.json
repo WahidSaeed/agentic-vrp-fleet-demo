@@ -1,0 +1,507 @@
+{
+  "note": "SYNTHETIC road graph for the demo re-planner. No real data.",
+  "nodes": [
+    {
+      "id": "J0",
+      "lon": 13.3777,
+      "lat": 52.5163,
+      "routeId": "route-mitte"
+    },
+    {
+      "id": "J1",
+      "lon": 13.383,
+      "lat": 52.517,
+      "routeId": "route-mitte"
+    },
+    {
+      "id": "J2",
+      "lon": 13.39,
+      "lat": 52.518,
+      "routeId": "route-mitte"
+    },
+    {
+      "id": "J3",
+      "lon": 13.395,
+      "lat": 52.5205,
+      "routeId": "route-mitte"
+    },
+    {
+      "id": "J4",
+      "lon": 13.389,
+      "lat": 52.5235,
+      "routeId": "route-mitte"
+    },
+    {
+      "id": "J5",
+      "lon": 13.38,
+      "lat": 52.5225,
+      "routeId": "route-mitte"
+    },
+    {
+      "id": "J6",
+      "lon": 13.374,
+      "lat": 52.52,
+      "routeId": "route-mitte"
+    },
+    {
+      "id": "J7",
+      "lon": 13.39,
+      "lat": 52.499,
+      "routeId": "route-kreuzberg"
+    },
+    {
+      "id": "J8",
+      "lon": 13.401,
+      "lat": 52.4975,
+      "routeId": "route-kreuzberg"
+    },
+    {
+      "id": "J9",
+      "lon": 13.412,
+      "lat": 52.4995,
+      "routeId": "route-kreuzberg"
+    },
+    {
+      "id": "J10",
+      "lon": 13.418,
+      "lat": 52.503,
+      "routeId": "route-kreuzberg"
+    },
+    {
+      "id": "J11",
+      "lon": 13.409,
+      "lat": 52.506,
+      "routeId": "route-kreuzberg"
+    },
+    {
+      "id": "J12",
+      "lon": 13.398,
+      "lat": 52.5045,
+      "routeId": "route-kreuzberg"
+    },
+    {
+      "id": "J13",
+      "lon": 13.413,
+      "lat": 52.532,
+      "routeId": "route-prenzlauer"
+    },
+    {
+      "id": "J14",
+      "lon": 13.42,
+      "lat": 52.536,
+      "routeId": "route-prenzlauer"
+    },
+    {
+      "id": "J15",
+      "lon": 13.428,
+      "lat": 52.54,
+      "routeId": "route-prenzlauer"
+    },
+    {
+      "id": "J16",
+      "lon": 13.421,
+      "lat": 52.544,
+      "routeId": "route-prenzlauer"
+    },
+    {
+      "id": "J17",
+      "lon": 13.41,
+      "lat": 52.542,
+      "routeId": "route-prenzlauer"
+    },
+    {
+      "id": "J18",
+      "lon": 13.405,
+      "lat": 52.537,
+      "routeId": "route-prenzlauer"
+    },
+    {
+      "id": "J19",
+      "lon": 13.302,
+      "lat": 52.506,
+      "routeId": "route-charlottenburg"
+    },
+    {
+      "id": "J20",
+      "lon": 13.311,
+      "lat": 52.505,
+      "routeId": "route-charlottenburg"
+    },
+    {
+      "id": "J21",
+      "lon": 13.32,
+      "lat": 52.5075,
+      "routeId": "route-charlottenburg"
+    },
+    {
+      "id": "J22",
+      "lon": 13.325,
+      "lat": 52.511,
+      "routeId": "route-charlottenburg"
+    },
+    {
+      "id": "J23",
+      "lon": 13.316,
+      "lat": 52.514,
+      "routeId": "route-charlottenburg"
+    },
+    {
+      "id": "J24",
+      "lon": 13.305,
+      "lat": 52.512,
+      "routeId": "route-charlottenburg"
+    }
+  ],
+  "edges": [
+    {
+      "id": "J0_J1",
+      "from": "J0",
+      "to": "J1",
+      "minutes": 0.881,
+      "kind": "route"
+    },
+    {
+      "id": "J1_J0",
+      "from": "J1",
+      "to": "J0",
+      "minutes": 0.881,
+      "kind": "route"
+    },
+    {
+      "id": "J1_J2",
+      "from": "J1",
+      "to": "J2",
+      "minutes": 1.168,
+      "kind": "route"
+    },
+    {
+      "id": "J2_J1",
+      "from": "J2",
+      "to": "J1",
+      "minutes": 1.168,
+      "kind": "route"
+    },
+    {
+      "id": "J2_J3",
+      "from": "J2",
+      "to": "J3",
+      "minutes": 1.051,
+      "kind": "route"
+    },
+    {
+      "id": "J3_J2",
+      "from": "J3",
+      "to": "J2",
+      "minutes": 1.051,
+      "kind": "route"
+    },
+    {
+      "id": "J3_J4",
+      "from": "J3",
+      "to": "J4",
+      "minutes": 1.261,
+      "kind": "route"
+    },
+    {
+      "id": "J4_J3",
+      "from": "J4",
+      "to": "J3",
+      "minutes": 1.261,
+      "kind": "route"
+    },
+    {
+      "id": "J4_J5",
+      "from": "J4",
+      "to": "J5",
+      "minutes": 1.486,
+      "kind": "route"
+    },
+    {
+      "id": "J5_J4",
+      "from": "J5",
+      "to": "J4",
+      "minutes": 1.486,
+      "kind": "route"
+    },
+    {
+      "id": "J5_J6",
+      "from": "J5",
+      "to": "J6",
+      "minutes": 1.181,
+      "kind": "route"
+    },
+    {
+      "id": "J6_J5",
+      "from": "J6",
+      "to": "J5",
+      "minutes": 1.181,
+      "kind": "route"
+    },
+    {
+      "id": "J6_J0",
+      "from": "J6",
+      "to": "J0",
+      "minutes": 1.156,
+      "kind": "route"
+    },
+    {
+      "id": "J0_J6",
+      "from": "J0",
+      "to": "J6",
+      "minutes": 1.156,
+      "kind": "route"
+    },
+    {
+      "id": "J7_J8",
+      "from": "J7",
+      "to": "J8",
+      "minutes": 1.831,
+      "kind": "route"
+    },
+    {
+      "id": "J8_J7",
+      "from": "J8",
+      "to": "J7",
+      "minutes": 1.831,
+      "kind": "route"
+    },
+    {
+      "id": "J8_J9",
+      "from": "J8",
+      "to": "J9",
+      "minutes": 1.865,
+      "kind": "route"
+    },
+    {
+      "id": "J9_J8",
+      "from": "J9",
+      "to": "J8",
+      "minutes": 1.865,
+      "kind": "route"
+    },
+    {
+      "id": "J9_J10",
+      "from": "J9",
+      "to": "J10",
+      "minutes": 1.35,
+      "kind": "route"
+    },
+    {
+      "id": "J10_J9",
+      "from": "J10",
+      "to": "J9",
+      "minutes": 1.35,
+      "kind": "route"
+    },
+    {
+      "id": "J10_J11",
+      "from": "J10",
+      "to": "J11",
+      "minutes": 1.667,
+      "kind": "route"
+    },
+    {
+      "id": "J11_J10",
+      "from": "J11",
+      "to": "J10",
+      "minutes": 1.667,
+      "kind": "route"
+    },
+    {
+      "id": "J11_J12",
+      "from": "J11",
+      "to": "J12",
+      "minutes": 1.831,
+      "kind": "route"
+    },
+    {
+      "id": "J12_J11",
+      "from": "J12",
+      "to": "J11",
+      "minutes": 1.831,
+      "kind": "route"
+    },
+    {
+      "id": "J12_J7",
+      "from": "J12",
+      "to": "J7",
+      "minutes": 1.96,
+      "kind": "route"
+    },
+    {
+      "id": "J7_J12",
+      "from": "J7",
+      "to": "J12",
+      "minutes": 1.96,
+      "kind": "route"
+    },
+    {
+      "id": "J13_J14",
+      "from": "J13",
+      "to": "J14",
+      "minutes": 1.559,
+      "kind": "route"
+    },
+    {
+      "id": "J14_J13",
+      "from": "J14",
+      "to": "J13",
+      "minutes": 1.559,
+      "kind": "route"
+    },
+    {
+      "id": "J14_J15",
+      "from": "J14",
+      "to": "J15",
+      "minutes": 1.681,
+      "kind": "route"
+    },
+    {
+      "id": "J15_J14",
+      "from": "J15",
+      "to": "J14",
+      "minutes": 1.681,
+      "kind": "route"
+    },
+    {
+      "id": "J15_J16",
+      "from": "J15",
+      "to": "J16",
+      "minutes": 1.559,
+      "kind": "route"
+    },
+    {
+      "id": "J16_J15",
+      "from": "J16",
+      "to": "J15",
+      "minutes": 1.559,
+      "kind": "route"
+    },
+    {
+      "id": "J16_J17",
+      "from": "J16",
+      "to": "J17",
+      "minutes": 1.863,
+      "kind": "route"
+    },
+    {
+      "id": "J17_J16",
+      "from": "J17",
+      "to": "J16",
+      "minutes": 1.863,
+      "kind": "route"
+    },
+    {
+      "id": "J17_J18",
+      "from": "J17",
+      "to": "J18",
+      "minutes": 1.562,
+      "kind": "route"
+    },
+    {
+      "id": "J18_J17",
+      "from": "J18",
+      "to": "J17",
+      "minutes": 1.562,
+      "kind": "route"
+    },
+    {
+      "id": "J18_J13",
+      "from": "J18",
+      "to": "J13",
+      "minutes": 1.862,
+      "kind": "route"
+    },
+    {
+      "id": "J13_J18",
+      "from": "J13",
+      "to": "J18",
+      "minutes": 1.862,
+      "kind": "route"
+    },
+    {
+      "id": "J19_J20",
+      "from": "J19",
+      "to": "J20",
+      "minutes": 1.486,
+      "kind": "route"
+    },
+    {
+      "id": "J20_J19",
+      "from": "J20",
+      "to": "J19",
+      "minutes": 1.486,
+      "kind": "route"
+    },
+    {
+      "id": "J20_J21",
+      "from": "J20",
+      "to": "J21",
+      "minutes": 1.607,
+      "kind": "route"
+    },
+    {
+      "id": "J21_J20",
+      "from": "J21",
+      "to": "J20",
+      "minutes": 1.607,
+      "kind": "route"
+    },
+    {
+      "id": "J21_J22",
+      "from": "J21",
+      "to": "J22",
+      "minutes": 1.238,
+      "kind": "route"
+    },
+    {
+      "id": "J22_J21",
+      "from": "J22",
+      "to": "J21",
+      "minutes": 1.238,
+      "kind": "route"
+    },
+    {
+      "id": "J22_J23",
+      "from": "J22",
+      "to": "J23",
+      "minutes": 1.667,
+      "kind": "route"
+    },
+    {
+      "id": "J23_J22",
+      "from": "J23",
+      "to": "J22",
+      "minutes": 1.667,
+      "kind": "route"
+    },
+    {
+      "id": "J23_J24",
+      "from": "J23",
+      "to": "J24",
+      "minutes": 1.865,
+      "kind": "route"
+    },
+    {
+      "id": "J24_J23",
+      "from": "J24",
+      "to": "J23",
+      "minutes": 1.865,
+      "kind": "route"
+    },
+    {
+      "id": "J24_J19",
+      "from": "J24",
+      "to": "J19",
+      "minutes": 1.674,
+      "kind": "route"
+    },
+    {
+      "id": "J19_J24",
+      "from": "J19",
+      "to": "J24",
+      "minutes": 1.674,
+      "kind": "route"
+    }
+  ]
+}
