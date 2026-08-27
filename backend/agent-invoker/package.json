@@ -1,0 +1,7 @@
+{
+  "name": "agent-invoker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Synthetic conference demo - no real data.",
+  "main": "index.js"
+}
