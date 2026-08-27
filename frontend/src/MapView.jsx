@@ -1,10 +1,12 @@
 // Synthetic conference demo - no real data.
 // MapLibre map with smoothly-interpolated vehicle markers and detour overlays.
-// Uses the free MapLibre demo tiles (no API key, no billing).
+// Basemap: OpenFreeMap "liberty" - a full OSM street style, no API key, no
+// signup, no billing (https://openfreemap.org). Override with VITE_MAP_STYLE
+// (e.g. a Carto style: https://basemaps.cartocdn.com/gl/positron-gl-style/style.json).
 import { useEffect, useRef } from "react";
 import maplibregl from "maplibre-gl";
 
-const STYLE = "https://demotiles.maplibre.org/style.json";
+const STYLE = import.meta.env.VITE_MAP_STYLE || "https://tiles.openfreemap.org/styles/liberty";
 const CENTER = [13.404, 52.52]; // Berlin
 
 export default function MapView({ vehicles, disruption }) {
@@ -15,9 +17,12 @@ export default function MapView({ vehicles, disruption }) {
   const raf = useRef(null);
 
   useEffect(() => {
-    const map = new maplibregl.Map({ container: ref.current, style: STYLE, center: CENTER, zoom: 12 });
+    const map = new maplibregl.Map({ container: ref.current, style: STYLE, center: CENTER, zoom: 12.4 });
     mapRef.current = map;
+    map.on("error", (e) => console.warn("[map]", e.error?.message || e));
     map.on("load", () => {
+      map.resize(); // guard against a 0-size container at init
+
       map.addSource("detours", { type: "geojson", data: { type: "FeatureCollection", features: [] } });
       map.addLayer({ id: "detours", type: "line", source: "detours", paint: { "line-color": "#ff8c00", "line-width": 4, "line-dasharray": [2, 1] } });
       map.addSource("disruption", { type: "geojson", data: { type: "FeatureCollection", features: [] } });
