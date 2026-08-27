@@ -48,9 +48,12 @@ live segment at an AWS community event.
 - Route graph is a small in-code adjacency list, not Neo4j. Local Docker Neo4j is
   fine for dev but is intentionally *not* in the CloudFormation template.
 - Orchestration is a plain Lambda chain, not Step Functions.
-- Frontend runs **locally** against the deployed WebSocket API (no S3/CloudFront in
-  the stack) to keep teardown scope minimal.
-- WebSocket auth is a shared short-lived demo token, not IAM/JWT.
+- Frontend is a static build on **S3 + CloudFront**, both declared in the template
+  so they tear down with `delete-stack`. The hosted page defaults to replay mode;
+  `?live` on the URL drives the deployed WebSocket API. You can also run it locally
+  (`npm run dev`) against the same stack.
+- WebSocket auth is a shared short-lived demo token, not IAM/JWT. It is baked into
+  the public bundle for `?live` mode — rotate `DemoName` per event.
 
 **One bootstrap resource outside the template:** `deploy.sh` creates a dedicated,
 private, un-versioned S3 bucket `fleet-demo-artifacts-<account>-<region>` to hold
@@ -89,19 +92,15 @@ cd agentic-vrp-fleet-demo
 # 1. infra config
 cp infra/samconfig.toml.example infra/samconfig.toml   # edit region / model id if needed
 
-# 2. deploy (validate + build + deploy, prints outputs)
+# 2. deploy: stack + builds/publishes the frontend to CloudFront, prints outputs
+#    incl. SiteUrl (hosted, replay) and SiteUrl/?live (deployed WebSocket API)
 ./scripts/deploy.sh
 
-# 3. wire the frontend to the stack outputs (values NOT committed)
-cp frontend/.env.example frontend/.env.local
-#   set VITE_DEMO_MODE=live
-#   set VITE_WS_URL   = <WebSocketUrl output>
-#   set VITE_WS_TOKEN = <DemoWsToken output>
-
-# 4. frontend
+# 3. (local dev, optional) deploy.sh writes frontend/.env.production; for `npm run dev`
+#    copy frontend/.env.example -> .env.local and fill VITE_WS_URL / VITE_WS_TOKEN
 cd frontend && npm install && npm run dev      # http://localhost:5173/driver
 
-# 5. simulator (new terminal)
+# 4. simulator (feeds both local + hosted ?live)
 cd simulator && npm install
 node index.js run --stream <TelemetryStreamName output> --region eu-central-1 --vehicles 8
 ```
