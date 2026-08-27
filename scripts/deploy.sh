@@ -43,15 +43,41 @@ echo ">> sam deploy ($STACK)"
 sam deploy --config-file "$(pwd)/infra/samconfig.toml" --stack-name "$STACK" \
   --s3-bucket "$ARTIFACT_BUCKET" --s3-prefix "$STACK"
 
+get_out() { aws cloudformation describe-stacks --stack-name "$STACK" --region "$REGION" \
+  --query "Stacks[0].Outputs[?OutputKey=='$1'].OutputValue" --output text; }
+
+WS_URL=$(get_out WebSocketUrl)
+WS_TOKEN=$(get_out DemoWsToken)
+STREAM=$(get_out TelemetryStreamName)
+SITE_BUCKET=$(get_out SiteBucketName)
+DIST_ID=$(get_out SiteDistributionId)
+SITE_URL=$(get_out SiteUrl)
+
+echo ">> building + publishing frontend to $SITE_BUCKET"
+# .env.production is gitignored; it bakes the live WS endpoint into the bundle so
+# the ?live toggle works. The demo token is demo-grade (rotate per event).
+cat > frontend/.env.production <<ENV
+VITE_DEMO_MODE=replay
+VITE_WS_URL=$WS_URL
+VITE_WS_TOKEN=$WS_TOKEN
+VITE_REPLAY_URL=/session.json
+ENV
+( cd frontend && npm ci --silent && npm run build )
+aws s3 sync frontend/dist/ "s3://$SITE_BUCKET/" --delete
+aws cloudfront create-invalidation --distribution-id "$DIST_ID" --paths "/*" >/dev/null
+
 echo ">> outputs"
-aws cloudformation describe-stacks --stack-name "$STACK" \
+aws cloudformation describe-stacks --stack-name "$STACK" --region "$REGION" \
   --query "Stacks[0].Outputs" --output table
 
-cat <<'EOF'
+cat <<EOF
 
-Next:
-  1. Put WebSocketUrl / DemoWsToken / TelemetryStreamName into frontend/.env.local
-     and (optionally) simulator env. Do NOT commit those values.
-  2. ./scripts/seed-data.sh        # reset state
-  3. cd simulator && npm start     # start telemetry
+Hosted frontend:  $SITE_URL           (replay mode, always works)
+Live end-to-end:  $SITE_URL/?live     (drives the deployed WebSocket API)
+  (CloudFront can take a few minutes to serve the first deploy.)
+
+Local dev / simulator:
+  1. frontend/.env.local already targets the stack for \`npm run dev\`
+  2. ./scripts/seed-data.sh
+  3. node simulator/index.js run --stream $STREAM --region $REGION --vehicles 8
 EOF

@@ -393,7 +393,88 @@ Resources:
     DeletionPolicy: Delete
     Properties: { LogGroupName: !Sub "/aws/lambda/${DemoName}-dispatcher", RetentionInDays: !Ref LogRetentionDays }
 
+  # ---------------------------------------------------------------------------
+  # Static frontend hosting: private S3 + CloudFront (OAC). Both in this template
+  # so they tear down with `delete-stack`. Bucket has NO versioning; teardown.sh
+  # empties it before the stack delete (CloudFormation will not delete a
+  # non-empty bucket). The hosted page defaults to replay mode; add ?live to the
+  # URL to drive the deployed WebSocket API instead.
+  # ---------------------------------------------------------------------------
+  SiteBucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Delete
+    UpdateReplacePolicy: Delete
+    Properties:
+      BucketName: !Sub "${DemoName}-site-${AWS::AccountId}-${AWS::Region}"
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      Tags:
+        - { Key: Project, Value: aws-community-day-demo }
+        - { Key: Demo, Value: fleet }
+
+  SiteOAC:
+    Type: AWS::CloudFront::OriginAccessControl
+    Properties:
+      OriginAccessControlConfig:
+        Name: !Sub "${DemoName}-oac"
+        OriginAccessControlOriginType: s3
+        SigningBehavior: always
+        SigningProtocol: sigv4
+
+  SiteDistribution:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Enabled: true
+        DefaultRootObject: index.html
+        PriceClass: PriceClass_100
+        Origins:
+          - Id: s3origin
+            DomainName: !GetAtt SiteBucket.RegionalDomainName
+            OriginAccessControlId: !Ref SiteOAC
+            S3OriginConfig:
+              OriginAccessIdentity: ""
+        DefaultCacheBehavior:
+          TargetOriginId: s3origin
+          ViewerProtocolPolicy: redirect-to-https
+          Compress: true
+          # AWS managed "CachingOptimized" policy id
+          CachePolicyId: 658327ea-f89d-4fab-a63d-7e88639e58f6
+        CustomErrorResponses:
+          - { ErrorCode: 403, ResponseCode: 200, ResponsePagePath: /index.html }
+          - { ErrorCode: 404, ResponseCode: 200, ResponsePagePath: /index.html }
+      Tags:
+        - { Key: Project, Value: aws-community-day-demo }
+        - { Key: Demo, Value: fleet }
+
+  SiteBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref SiteBucket
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal: { Service: cloudfront.amazonaws.com }
+            Action: s3:GetObject
+            Resource: !Sub "${SiteBucket.Arn}/*"
+            Condition:
+              StringEquals:
+                AWS:SourceArn: !Sub "arn:aws:cloudfront::${AWS::AccountId}:distribution/${SiteDistribution}"
+
 Outputs:
+  SiteUrl:
+    Description: Public CloudFront URL for the hosted frontend (replay by default; add ?live).
+    Value: !Sub "https://${SiteDistribution.DomainName}"
+  SiteBucketName:
+    Description: S3 bucket the built frontend is synced to (deploy.sh) and emptied from (teardown.sh).
+    Value: !Ref SiteBucket
+  SiteDistributionId:
+    Description: CloudFront distribution id, for cache invalidation after a re-sync.
+    Value: !Ref SiteDistribution
   WebSocketUrl:
     Description: WebSocket endpoint for the frontend (wss). Do NOT commit this value.
     Value: !Sub "wss://${WebSocketApi}.execute-api.${AWS::Region}.amazonaws.com/demo"

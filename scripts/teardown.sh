@@ -10,6 +10,14 @@ REGION="${AWS_REGION:-eu-central-1}"
 
 ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
 ARTIFACT_BUCKET="${STACK}-artifacts-${ACCOUNT_ID}-${REGION}"
+SITE_BUCKET="${STACK}-site-${ACCOUNT_ID}-${REGION}"
+
+# CloudFormation will not delete a non-empty S3 bucket, so empty the site bucket
+# (declared in the template) before the stack delete.
+if aws s3api head-bucket --bucket "$SITE_BUCKET" 2>/dev/null; then
+  echo ">> emptying site bucket $SITE_BUCKET"
+  aws s3 rm "s3://$SITE_BUCKET/" --recursive --only-show-errors
+fi
 
 echo ">> delete-stack $STACK"
 aws cloudformation delete-stack --stack-name "$STACK" --region "$REGION"

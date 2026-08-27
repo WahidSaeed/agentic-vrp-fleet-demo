@@ -5,7 +5,19 @@ import { useEffect, useRef, useReducer, useCallback, useState } from "react";
 import { createWsClient } from "@shared/wsClient.js";
 import { createReplayEngine, loadReplayLog } from "@shared/replayEngine.js";
 
-const MODE = import.meta.env.VITE_DEMO_MODE || "replay";
+// Mode resolution order: ?live / ?mode=live|replay in the URL wins, then the
+// build-time VITE_DEMO_MODE, then replay. The hosted page ships default-replay
+// (always works, no secrets needed) and ?live opts into the deployed stack.
+function resolveMode() {
+  try {
+    const q = new URLSearchParams(window.location.search);
+    if (q.has("live")) return "live";
+    const m = q.get("mode");
+    if (m === "live" || m === "replay") return m;
+  } catch { /* SSR / no window */ }
+  return import.meta.env.VITE_DEMO_MODE || "replay";
+}
+const MODE = resolveMode();
 
 const initial = { vehicles: {}, disruption: null, proposal: null, lastEvent: null };
 
