@@ -1,0 +1,16 @@
+{
+  "name": "fleet-simulator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Synthetic vehicle telemetry simulator for the Agentic VRP demo. Synthetic data only.",
+  "type": "commonjs",
+  "bin": { "fleet-sim": "index.js" },
+  "scripts": {
+    "run": "node index.js run",
+    "disrupt": "node index.js disrupt",
+    "capture": "node index.js capture"
+  },
+  "dependencies": {
+    "@aws-sdk/client-kinesis": "^3.658.0"
+  }
+}
