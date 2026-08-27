@@ -1,0 +1,395 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Agentic VRP - Self-Healing Logistics (conference demo, synthetic data only).
+  Single self-contained stack: Kinesis -> stream processor -> DynamoDB, a Bedrock
+  reasoning agent, a human-in-the-loop approval gate, and a WebSocket API that
+  broadcasts live updates to the driver/dispatcher frontends.
+
+  Teardown: `aws cloudformation delete-stack --stack-name fleet-demo` removes
+  every resource below. All stateful resources set DeletionPolicy: Delete
+  explicitly so nothing is ever silently retained.
+
+Parameters:
+  DemoName:
+    Type: String
+    Default: fleet-demo
+    Description: Name prefix + tag value used for every resource and for teardown verification.
+  BedrockModelId:
+    Type: String
+    Default: anthropic.claude-3-5-sonnet-20240620-v1:0
+    Description: Bedrock model id for the reasoning agent. Must be enabled in this account/region.
+  LogRetentionDays:
+    Type: Number
+    Default: 3
+    Description: CloudWatch log retention (short, to keep cost near zero).
+
+Globals:
+  Function:
+    Runtime: nodejs22.x
+    MemorySize: 256
+    Timeout: 30
+    Architectures: [arm64]
+    Tags:
+      Project: aws-community-day-demo
+      Demo: fleet
+    Environment:
+      Variables:
+        VEHICLE_STATE_TABLE: !Ref VehicleStateTable
+        PENDING_APPROVALS_TABLE: !Ref PendingApprovalsTable
+        CONNECTIONS_TABLE: !Ref ConnectionsTable
+        DEMO_NAME: !Ref DemoName
+
+Resources:
+
+  # ---------------------------------------------------------------------------
+  # Ingestion
+  # ---------------------------------------------------------------------------
+  TelemetryStream:
+    Type: AWS::Kinesis::Stream
+    DeletionPolicy: Delete
+    UpdateReplacePolicy: Delete
+    Properties:
+      Name: !Sub "${DemoName}-telemetry"
+      StreamModeDetails:
+        StreamMode: ON_DEMAND   # pay-per-use, no provisioned shard hours
+      Tags:
+        - { Key: Project, Value: aws-community-day-demo }
+        - { Key: Demo, Value: fleet }
+
+  # ---------------------------------------------------------------------------
+  # State (all DeletionPolicy: Delete - never Retain)
+  # ---------------------------------------------------------------------------
+  VehicleStateTable:
+    Type: AWS::DynamoDB::Table
+    DeletionPolicy: Delete
+    UpdateReplacePolicy: Delete
+    Properties:
+      TableName: !Sub "${DemoName}-vehicle-state"
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - { AttributeName: vehicleId, AttributeType: S }
+      KeySchema:
+        - { AttributeName: vehicleId, KeyType: HASH }
+      Tags:
+        - { Key: Project, Value: aws-community-day-demo }
+        - { Key: Demo, Value: fleet }
+
+  PendingApprovalsTable:
+    Type: AWS::DynamoDB::Table
+    DeletionPolicy: Delete
+    UpdateReplacePolicy: Delete
+    Properties:
+      TableName: !Sub "${DemoName}-pending-approvals"
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - { AttributeName: approvalId, AttributeType: S }
+      KeySchema:
+        - { AttributeName: approvalId, KeyType: HASH }
+      TimeToLiveSpecification:
+        AttributeName: ttl
+        Enabled: true
+      Tags:
+        - { Key: Project, Value: aws-community-day-demo }
+        - { Key: Demo, Value: fleet }
+
+  ConnectionsTable:
+    Type: AWS::DynamoDB::Table
+    DeletionPolicy: Delete
+    UpdateReplacePolicy: Delete
+    Properties:
+      TableName: !Sub "${DemoName}-connections"
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - { AttributeName: connectionId, AttributeType: S }
+      KeySchema:
+        - { AttributeName: connectionId, KeyType: HASH }
+      TimeToLiveSpecification:
+        AttributeName: ttl
+        Enabled: true
+      Tags:
+        - { Key: Project, Value: aws-community-day-demo }
+        - { Key: Demo, Value: fleet }
+
+  # ---------------------------------------------------------------------------
+  # WebSocket API
+  # ---------------------------------------------------------------------------
+  WebSocketApi:
+    Type: AWS::ApiGatewayV2::Api
+    Properties:
+      Name: !Sub "${DemoName}-ws"
+      ProtocolType: WEBSOCKET
+      RouteSelectionExpression: "$request.body.action"
+      Tags:
+        Project: aws-community-day-demo
+        Demo: fleet
+
+  WebSocketStage:
+    Type: AWS::ApiGatewayV2::Stage
+    Properties:
+      ApiId: !Ref WebSocketApi
+      StageName: demo
+      AutoDeploy: true
+      Tags:
+        Project: aws-community-day-demo
+        Demo: fleet
+
+  ConnectRoute:
+    Type: AWS::ApiGatewayV2::Route
+    Properties:
+      ApiId: !Ref WebSocketApi
+      RouteKey: $connect
+      AuthorizationType: NONE
+      Target: !Sub "integrations/${ConnectIntegration}"
+  ConnectIntegration:
+    Type: AWS::ApiGatewayV2::Integration
+    Properties:
+      ApiId: !Ref WebSocketApi
+      IntegrationType: AWS_PROXY
+      IntegrationUri: !Sub "arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${ConnectFunction.Arn}/invocations"
+
+  DisconnectRoute:
+    Type: AWS::ApiGatewayV2::Route
+    Properties:
+      ApiId: !Ref WebSocketApi
+      RouteKey: $disconnect
+      AuthorizationType: NONE
+      Target: !Sub "integrations/${DisconnectIntegration}"
+  DisconnectIntegration:
+    Type: AWS::ApiGatewayV2::Integration
+    Properties:
+      ApiId: !Ref WebSocketApi
+      IntegrationType: AWS_PROXY
+      IntegrationUri: !Sub "arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${DisconnectFunction.Arn}/invocations"
+
+  DefaultRoute:
+    Type: AWS::ApiGatewayV2::Route
+    Properties:
+      ApiId: !Ref WebSocketApi
+      RouteKey: $default
+      AuthorizationType: NONE
+      Target: !Sub "integrations/${DefaultIntegration}"
+  DefaultIntegration:
+    Type: AWS::ApiGatewayV2::Integration
+    Properties:
+      ApiId: !Ref WebSocketApi
+      IntegrationType: AWS_PROXY
+      IntegrationUri: !Sub "arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${DispatcherFunction.Arn}/invocations"
+
+  # ---------------------------------------------------------------------------
+  # Lambda: WebSocket $connect  (validates a short-lived demo token)
+  # ---------------------------------------------------------------------------
+  ConnectFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub "${DemoName}-ws-connect"
+      Handler: connect.handler
+      CodeUri: ../backend/ws-handlers/
+      Role: !GetAtt ConnectFunctionRole.Arn
+      Environment:
+        Variables:
+          DEMO_WS_TOKEN: !Ref DemoName  # demo-grade shared token; rotate per event
+  ConnectFunctionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement: [{ Effect: Allow, Principal: { Service: lambda.amazonaws.com }, Action: sts:AssumeRole }]
+      Policies:
+        - PolicyName: connect
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - { Effect: Allow, Action: [logs:CreateLogGroup, logs:CreateLogStream, logs:PutLogEvents], Resource: "*" }
+              - { Effect: Allow, Action: [dynamodb:PutItem], Resource: !GetAtt ConnectionsTable.Arn }
+  ConnectPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref ConnectFunction
+      Action: lambda:InvokeFunction
+      Principal: apigateway.amazonaws.com
+      SourceArn: !Sub "arn:aws:execute-api:${AWS::Region}:${AWS::AccountId}:${WebSocketApi}/*"
+
+  # ---------------------------------------------------------------------------
+  # Lambda: WebSocket $disconnect
+  # ---------------------------------------------------------------------------
+  DisconnectFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub "${DemoName}-ws-disconnect"
+      Handler: disconnect.handler
+      CodeUri: ../backend/ws-handlers/
+      Role: !GetAtt DisconnectFunctionRole.Arn
+  DisconnectFunctionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement: [{ Effect: Allow, Principal: { Service: lambda.amazonaws.com }, Action: sts:AssumeRole }]
+      Policies:
+        - PolicyName: disconnect
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - { Effect: Allow, Action: [logs:CreateLogGroup, logs:CreateLogStream, logs:PutLogEvents], Resource: "*" }
+              - { Effect: Allow, Action: [dynamodb:DeleteItem], Resource: !GetAtt ConnectionsTable.Arn }
+  DisconnectPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref DisconnectFunction
+      Action: lambda:InvokeFunction
+      Principal: apigateway.amazonaws.com
+      SourceArn: !Sub "arn:aws:execute-api:${AWS::Region}:${AWS::AccountId}:${WebSocketApi}/*"
+
+  # ---------------------------------------------------------------------------
+  # Lambda: Stream processor (Kinesis trigger) - updates state, broadcasts,
+  # and fires the agent on a disruption event.
+  # ---------------------------------------------------------------------------
+  StreamProcessorFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub "${DemoName}-stream-processor"
+      Handler: index.handler
+      CodeUri: ../backend/stream-processor/
+      Role: !GetAtt StreamProcessorRole.Arn
+      Environment:
+        Variables:
+          WS_ENDPOINT: !Sub "https://${WebSocketApi}.execute-api.${AWS::Region}.amazonaws.com/demo"
+          AGENT_FUNCTION: !Ref AgentInvokerFunction
+      Events:
+        Stream:
+          Type: Kinesis
+          Properties:
+            Stream: !GetAtt TelemetryStream.Arn
+            StartingPosition: LATEST
+            BatchSize: 100
+            MaximumBatchingWindowInSeconds: 1
+            MaximumRetryAttempts: 1
+  StreamProcessorRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement: [{ Effect: Allow, Principal: { Service: lambda.amazonaws.com }, Action: sts:AssumeRole }]
+      Policies:
+        - PolicyName: stream-processor
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - { Effect: Allow, Action: [logs:CreateLogGroup, logs:CreateLogStream, logs:PutLogEvents], Resource: "*" }
+              - Effect: Allow
+                Action: [kinesis:GetRecords, kinesis:GetShardIterator, kinesis:DescribeStream, kinesis:DescribeStreamSummary, kinesis:ListShards, kinesis:SubscribeToShard]
+                Resource: !GetAtt TelemetryStream.Arn
+              - { Effect: Allow, Action: [dynamodb:PutItem, dynamodb:UpdateItem, dynamodb:GetItem], Resource: !GetAtt VehicleStateTable.Arn }
+              - { Effect: Allow, Action: [dynamodb:Scan], Resource: !GetAtt ConnectionsTable.Arn }
+              - { Effect: Allow, Action: [dynamodb:DeleteItem], Resource: !GetAtt ConnectionsTable.Arn }
+              - { Effect: Allow, Action: [execute-api:ManageConnections], Resource: !Sub "arn:aws:execute-api:${AWS::Region}:${AWS::AccountId}:${WebSocketApi}/*" }
+              - { Effect: Allow, Action: [lambda:InvokeFunction], Resource: !GetAtt AgentInvokerFunction.Arn }
+
+  # ---------------------------------------------------------------------------
+  # Lambda: Agent invoker (Bedrock reasoning + approval gate)
+  # ---------------------------------------------------------------------------
+  AgentInvokerFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub "${DemoName}-agent-invoker"
+      Handler: index.handler
+      CodeUri: ../backend/agent-invoker/
+      Timeout: 60
+      Environment:
+        Variables:
+          WS_ENDPOINT: !Sub "https://${WebSocketApi}.execute-api.${AWS::Region}.amazonaws.com/demo"
+          BEDROCK_MODEL_ID: !Ref BedrockModelId
+      Role: !GetAtt AgentInvokerRole.Arn
+  AgentInvokerRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement: [{ Effect: Allow, Principal: { Service: lambda.amazonaws.com }, Action: sts:AssumeRole }]
+      Policies:
+        - PolicyName: agent-invoker
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - { Effect: Allow, Action: [logs:CreateLogGroup, logs:CreateLogStream, logs:PutLogEvents], Resource: "*" }
+              - { Effect: Allow, Action: [bedrock:InvokeModel], Resource: !Sub "arn:aws:bedrock:${AWS::Region}::foundation-model/*" }
+              - { Effect: Allow, Action: [dynamodb:GetItem, dynamodb:Scan], Resource: !GetAtt VehicleStateTable.Arn }
+              - { Effect: Allow, Action: [dynamodb:PutItem], Resource: !GetAtt PendingApprovalsTable.Arn }
+              - { Effect: Allow, Action: [dynamodb:Scan], Resource: !GetAtt ConnectionsTable.Arn }
+              - { Effect: Allow, Action: [dynamodb:DeleteItem], Resource: !GetAtt ConnectionsTable.Arn }
+              - { Effect: Allow, Action: [execute-api:ManageConnections], Resource: !Sub "arn:aws:execute-api:${AWS::Region}:${AWS::AccountId}:${WebSocketApi}/*" }
+
+  # ---------------------------------------------------------------------------
+  # Lambda: Dispatcher / $default WS route (approve | reject | subscribe)
+  # ---------------------------------------------------------------------------
+  DispatcherFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub "${DemoName}-dispatcher"
+      Handler: index.handler
+      CodeUri: ../backend/dispatcher/
+      Environment:
+        Variables:
+          WS_ENDPOINT: !Sub "https://${WebSocketApi}.execute-api.${AWS::Region}.amazonaws.com/demo"
+      Role: !GetAtt DispatcherRole.Arn
+  DispatcherRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement: [{ Effect: Allow, Principal: { Service: lambda.amazonaws.com }, Action: sts:AssumeRole }]
+      Policies:
+        - PolicyName: dispatcher
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - { Effect: Allow, Action: [logs:CreateLogGroup, logs:CreateLogStream, logs:PutLogEvents], Resource: "*" }
+              - { Effect: Allow, Action: [dynamodb:GetItem, dynamodb:UpdateItem, dynamodb:DeleteItem], Resource: !GetAtt PendingApprovalsTable.Arn }
+              - { Effect: Allow, Action: [dynamodb:UpdateItem], Resource: !GetAtt VehicleStateTable.Arn }
+              - { Effect: Allow, Action: [dynamodb:Scan], Resource: !GetAtt ConnectionsTable.Arn }
+              - { Effect: Allow, Action: [dynamodb:DeleteItem], Resource: !GetAtt ConnectionsTable.Arn }
+              - { Effect: Allow, Action: [execute-api:ManageConnections], Resource: !Sub "arn:aws:execute-api:${AWS::Region}:${AWS::AccountId}:${WebSocketApi}/*" }
+  DispatcherPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref DispatcherFunction
+      Action: lambda:InvokeFunction
+      Principal: apigateway.amazonaws.com
+      SourceArn: !Sub "arn:aws:execute-api:${AWS::Region}:${AWS::AccountId}:${WebSocketApi}/*"
+
+  # ---------------------------------------------------------------------------
+  # Log groups - explicit so they carry DeletionPolicy: Delete and short retention
+  # (Lambda would otherwise auto-create them outside the stack and leave them behind.)
+  # ---------------------------------------------------------------------------
+  ConnectLogGroup:
+    Type: AWS::Logs::LogGroup
+    DeletionPolicy: Delete
+    Properties: { LogGroupName: !Sub "/aws/lambda/${DemoName}-ws-connect", RetentionInDays: !Ref LogRetentionDays }
+  DisconnectLogGroup:
+    Type: AWS::Logs::LogGroup
+    DeletionPolicy: Delete
+    Properties: { LogGroupName: !Sub "/aws/lambda/${DemoName}-ws-disconnect", RetentionInDays: !Ref LogRetentionDays }
+  StreamProcessorLogGroup:
+    Type: AWS::Logs::LogGroup
+    DeletionPolicy: Delete
+    Properties: { LogGroupName: !Sub "/aws/lambda/${DemoName}-stream-processor", RetentionInDays: !Ref LogRetentionDays }
+  AgentInvokerLogGroup:
+    Type: AWS::Logs::LogGroup
+    DeletionPolicy: Delete
+    Properties: { LogGroupName: !Sub "/aws/lambda/${DemoName}-agent-invoker", RetentionInDays: !Ref LogRetentionDays }
+  DispatcherLogGroup:
+    Type: AWS::Logs::LogGroup
+    DeletionPolicy: Delete
+    Properties: { LogGroupName: !Sub "/aws/lambda/${DemoName}-dispatcher", RetentionInDays: !Ref LogRetentionDays }
+
+Outputs:
+  WebSocketUrl:
+    Description: WebSocket endpoint for the frontend (wss). Do NOT commit this value.
+    Value: !Sub "wss://${WebSocketApi}.execute-api.${AWS::Region}.amazonaws.com/demo"
+  TelemetryStreamName:
+    Description: Kinesis stream name for the local simulator.
+    Value: !Ref TelemetryStream
+  DemoWsToken:
+    Description: Short-lived demo token the frontend must present on $connect.
+    Value: !Ref DemoName

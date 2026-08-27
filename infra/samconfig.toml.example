@@ -1,0 +1,25 @@
+# Copy to samconfig.toml (gitignored) and adjust. No account-specific secrets here,
+# but region / model id are environment-specific so the real file is not committed.
+version = 0.1
+
+[default.global.parameters]
+stack_name = "fleet-demo"
+
+[default.build.parameters]
+cached = true
+parallel = true
+
+[default.deploy.parameters]
+stack_name = "fleet-demo"
+region = "eu-central-1"
+capabilities = "CAPABILITY_IAM"
+resolve_s3 = true
+confirm_changeset = false
+disable_rollback = false
+parameter_overrides = "DemoName=fleet-demo BedrockModelId=anthropic.claude-3-5-sonnet-20240620-v1:0"
+tags = "Project=aws-community-day-demo Demo=fleet"
+
+[default.delete.parameters]
+stack_name = "fleet-demo"
+region = "eu-central-1"
+no_prompts = true
