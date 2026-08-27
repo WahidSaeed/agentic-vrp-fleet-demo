@@ -3,16 +3,16 @@
   "disruptedVehicleId": "veh-3",
   "detourWaypoints": [
     [
-      13.428351999999999,
-      52.541281
+      13.420836,
+      52.535986
     ],
     [
-      13.428552,
-      52.542481
+      13.421036,
+      52.537186000000005
     ],
     [
-      13.427152,
-      52.543081
+      13.419636,
+      52.537786000000004
     ]
   ],
   "events": [
@@ -23,12 +23,12 @@
         "type": "position",
         "vehicleId": "veh-1",
         "routeId": "route-mitte",
-        "lat": 52.521276,
-        "lon": 13.393335,
+        "lat": 52.520381,
+        "lon": 13.394986,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090970
+        "stopsRemaining": 6,
+        "ts": 1787838369627
       }
     },
     {
@@ -38,12 +38,12 @@
         "type": "position",
         "vehicleId": "veh-2",
         "routeId": "route-kreuzberg",
-        "lat": 52.505591,
-        "lon": 13.410175,
+        "lat": 52.502607,
+        "lon": 13.417117,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090970
+        "stopsRemaining": 5,
+        "ts": 1787838369627
       }
     },
     {
@@ -53,12 +53,12 @@
         "type": "position",
         "vehicleId": "veh-3",
         "routeId": "route-prenzlauer",
-        "lat": 52.539172,
-        "lon": 13.426127,
+        "lat": 52.533762,
+        "lon": 13.416198,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 6,
-        "ts": 1787836090970
+        "stopsRemaining": 7,
+        "ts": 1787838369627
       }
     },
     {
@@ -68,12 +68,12 @@
         "type": "position",
         "vehicleId": "veh-4",
         "routeId": "route-charlottenburg",
-        "lat": 52.505822,
-        "lon": 13.303779,
+        "lat": 52.505397,
+        "lon": 13.307146,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 7,
-        "ts": 1787836090970
+        "ts": 1787838369627
       }
     },
     {
@@ -83,12 +83,12 @@
         "type": "position",
         "vehicleId": "veh-5",
         "routeId": "route-mitte",
-        "lat": 52.520341,
-        "lon": 13.394396,
+        "lat": 52.519143,
+        "lon": 13.392331,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 6,
-        "ts": 1787836090970
+        "ts": 1787838369627
       }
     },
     {
@@ -98,12 +98,12 @@
         "type": "position",
         "vehicleId": "veh-6",
         "routeId": "route-kreuzberg",
-        "lat": 52.499087,
-        "lon": 13.409978,
+        "lat": 52.497506,
+        "lon": 13.40178,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 6,
-        "ts": 1787836090970
+        "ts": 1787838369627
       }
     },
     {
@@ -113,12 +113,12 @@
         "type": "position",
         "vehicleId": "veh-7",
         "routeId": "route-prenzlauer",
-        "lat": 52.543917,
-        "lon": 13.421257,
+        "lat": 52.543812,
+        "lon": 13.420353,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090970
+        "stopsRemaining": 4,
+        "ts": 1787838369627
       }
     },
     {
@@ -128,12 +128,12 @@
         "type": "position",
         "vehicleId": "veh-8",
         "routeId": "route-charlottenburg",
-        "lat": 52.510919,
-        "lon": 13.32463,
+        "lat": 52.505202,
+        "lon": 13.30851,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090970
+        "stopsRemaining": 7,
+        "ts": 1787838369627
       }
     },
     {
@@ -143,12 +143,12 @@
         "type": "position",
         "vehicleId": "veh-1",
         "routeId": "route-mitte",
-        "lat": 52.521593,
-        "lon": 13.393006,
+        "lat": 52.518239,
+        "lon": 13.390336,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 5,
-        "ts": 1787836090970
+        "ts": 1787838369627
       }
     },
     {
@@ -158,12 +158,12 @@
         "type": "position",
         "vehicleId": "veh-2",
         "routeId": "route-kreuzberg",
-        "lat": 52.505926,
-        "lon": 13.409569,
+        "lat": 52.502866,
+        "lon": 13.417539,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369627
       }
     },
     {
@@ -173,12 +173,12 @@
         "type": "position",
         "vehicleId": "veh-3",
         "routeId": "route-prenzlauer",
-        "lat": 52.539386,
-        "lon": 13.426919,
+        "lat": 52.534118,
+        "lon": 13.416632,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 6,
-        "ts": 1787836090971
+        "stopsRemaining": 7,
+        "ts": 1787838369627
       }
     },
     {
@@ -188,12 +188,12 @@
         "type": "position",
         "vehicleId": "veh-4",
         "routeId": "route-charlottenburg",
-        "lat": 52.505883,
-        "lon": 13.304456,
+        "lat": 52.505276,
+        "lon": 13.307796,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 7,
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -203,12 +203,12 @@
         "type": "position",
         "vehicleId": "veh-5",
         "routeId": "route-mitte",
-        "lat": 52.520415,
-        "lon": 13.394999,
+        "lat": 52.519277,
+        "lon": 13.392875,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 6,
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -218,12 +218,12 @@
         "type": "position",
         "vehicleId": "veh-6",
         "routeId": "route-kreuzberg",
-        "lat": 52.499236,
-        "lon": 13.41078,
+        "lat": 52.497833,
+        "lon": 13.402638,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 6,
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -233,12 +233,12 @@
         "type": "position",
         "vehicleId": "veh-7",
         "routeId": "route-prenzlauer",
-        "lat": 52.540331,
-        "lon": 13.427571,
+        "lat": 52.543636,
+        "lon": 13.419318,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 4,
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -248,12 +248,12 @@
         "type": "position",
         "vehicleId": "veh-8",
         "routeId": "route-charlottenburg",
-        "lat": 52.507552,
-        "lon": 13.320231,
+        "lat": 52.50516,
+        "lon": 13.30925,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 7,
+        "ts": 1787838369627
       }
     },
     {
@@ -263,12 +263,12 @@
         "type": "position",
         "vehicleId": "veh-1",
         "routeId": "route-mitte",
-        "lat": 52.521682,
-        "lon": 13.392633,
+        "lat": 52.520914,
+        "lon": 13.39419,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 5,
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -278,12 +278,12 @@
         "type": "position",
         "vehicleId": "veh-2",
         "routeId": "route-kreuzberg",
-        "lat": 52.502951,
-        "lon": 13.417947,
+        "lat": 52.499405,
+        "lon": 13.412017,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
+        "stopsRemaining": 4,
+        "ts": 1787838369627
       }
     },
     {
@@ -293,12 +293,12 @@
         "type": "position",
         "vehicleId": "veh-3",
         "routeId": "route-prenzlauer",
-        "lat": 52.539802,
-        "lon": 13.427335,
+        "lat": 52.534387,
+        "lon": 13.41732,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 6,
-        "ts": 1787836090971
+        "stopsRemaining": 7,
+        "ts": 1787838369627
       }
     },
     {
@@ -308,12 +308,12 @@
         "type": "position",
         "vehicleId": "veh-4",
         "routeId": "route-charlottenburg",
-        "lat": 52.505693,
-        "lon": 13.304861,
+        "lat": 52.505249,
+        "lon": 13.308459,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 7,
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -323,12 +323,12 @@
         "type": "position",
         "vehicleId": "veh-5",
         "routeId": "route-mitte",
-        "lat": 52.518232,
-        "lon": 13.39038,
+        "lat": 52.519598,
+        "lon": 13.393091,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369627
       }
     },
     {
@@ -338,12 +338,12 @@
         "type": "position",
         "vehicleId": "veh-6",
         "routeId": "route-kreuzberg",
-        "lat": 52.499268,
-        "lon": 13.411393,
+        "lat": 52.497982,
+        "lon": 13.403352,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 6,
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -353,12 +353,12 @@
         "type": "position",
         "vehicleId": "veh-7",
         "routeId": "route-prenzlauer",
-        "lat": 52.54382,
-        "lon": 13.419862,
+        "lat": 52.543655,
+        "lon": 13.41854,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 4,
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -368,12 +368,12 @@
         "type": "position",
         "vehicleId": "veh-8",
         "routeId": "route-charlottenburg",
-        "lat": 52.511176,
-        "lon": 13.324197,
+        "lat": 52.505158,
+        "lon": 13.309836,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 7,
+        "ts": 1787838369627
       }
     },
     {
@@ -383,12 +383,12 @@
         "type": "position",
         "vehicleId": "veh-1",
         "routeId": "route-mitte",
-        "lat": 52.522069,
-        "lon": 13.391991,
+        "lat": 52.521153,
+        "lon": 13.393791,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 5,
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -398,12 +398,12 @@
         "type": "position",
         "vehicleId": "veh-2",
         "routeId": "route-kreuzberg",
-        "lat": 52.505884,
-        "lon": 13.408166,
+        "lat": 52.503364,
+        "lon": 13.417295,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
+        "stopsRemaining": 4,
+        "ts": 1787838369627
       }
     },
     {
@@ -413,42 +413,42 @@
         "type": "position",
         "vehicleId": "veh-3",
         "routeId": "route-prenzlauer",
-        "lat": 52.540003,
-        "lon": 13.427811,
+        "lat": 52.534592,
+        "lon": 13.417579,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 7,
+        "ts": 1787838369627
+      }
+    },
+    {
+      "at": 4500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.505352,
+        "lon": 13.309107,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 7,
+        "ts": 1787838369627
+      }
+    },
+    {
+      "at": 4500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-5",
+        "routeId": "route-mitte",
+        "lat": 52.519786,
+        "lon": 13.393353,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 6,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 4500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.505588,
-        "lon": 13.305639,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 7,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 4500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-5",
-        "routeId": "route-mitte",
-        "lat": 52.520847,
-        "lon": 13.39438,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -458,12 +458,12 @@
         "type": "position",
         "vehicleId": "veh-6",
         "routeId": "route-kreuzberg",
-        "lat": 52.497679,
-        "lon": 13.401149,
+        "lat": 52.498044,
+        "lon": 13.404219,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369627
       }
     },
     {
@@ -473,12 +473,12 @@
         "type": "position",
         "vehicleId": "veh-7",
         "routeId": "route-prenzlauer",
-        "lat": 52.543635,
-        "lon": 13.418978,
+        "lat": 52.543416,
+        "lon": 13.417856,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 4,
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -488,12 +488,12 @@
         "type": "position",
         "vehicleId": "veh-8",
         "routeId": "route-charlottenburg",
-        "lat": 52.511477,
-        "lon": 13.323529,
+        "lat": 52.505149,
+        "lon": 13.310517,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 7,
+        "ts": 1787838369627
       }
     },
     {
@@ -503,12 +503,12 @@
         "type": "position",
         "vehicleId": "veh-1",
         "routeId": "route-mitte",
-        "lat": 52.522092,
-        "lon": 13.391716,
+        "lat": 52.521258,
+        "lon": 13.393502,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 5,
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -518,12 +518,12 @@
         "type": "position",
         "vehicleId": "veh-2",
         "routeId": "route-kreuzberg",
-        "lat": 52.505893,
-        "lon": 13.407387,
+        "lat": 52.503336,
+        "lon": 13.416602,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
+        "stopsRemaining": 4,
+        "ts": 1787838369627
       }
     },
     {
@@ -533,12 +533,12 @@
         "type": "position",
         "vehicleId": "veh-3",
         "routeId": "route-prenzlauer",
-        "lat": 52.536145,
-        "lon": 13.420517,
+        "lat": 52.535037,
+        "lon": 13.418059,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 7,
+        "ts": 1787838369627
       }
     },
     {
@@ -548,12 +548,12 @@
         "type": "position",
         "vehicleId": "veh-4",
         "routeId": "route-charlottenburg",
-        "lat": 52.505612,
-        "lon": 13.306111,
+        "lat": 52.505139,
+        "lon": 13.309629,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 7,
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -563,12 +563,12 @@
         "type": "position",
         "vehicleId": "veh-5",
         "routeId": "route-mitte",
-        "lat": 52.521072,
-        "lon": 13.393897,
+        "lat": 52.519801,
+        "lon": 13.393918,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369627
       }
     },
     {
@@ -578,12 +578,12 @@
         "type": "position",
         "vehicleId": "veh-6",
         "routeId": "route-kreuzberg",
-        "lat": 52.499689,
-        "lon": 13.412612,
+        "lat": 52.49807,
+        "lon": 13.405024,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369627
       }
     },
     {
@@ -593,12 +593,12 @@
         "type": "position",
         "vehicleId": "veh-7",
         "routeId": "route-prenzlauer",
-        "lat": 52.543633,
-        "lon": 13.418217,
+        "lat": 52.543228,
+        "lon": 13.417057,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 4,
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -608,12 +608,12 @@
         "type": "position",
         "vehicleId": "veh-8",
         "routeId": "route-charlottenburg",
-        "lat": 52.511761,
-        "lon": 13.322954,
+        "lat": 52.505897,
+        "lon": 13.30214,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369627
       }
     },
     {
@@ -623,12 +623,12 @@
         "type": "position",
         "vehicleId": "veh-1",
         "routeId": "route-mitte",
-        "lat": 52.522455,
-        "lon": 13.391137,
+        "lat": 52.521633,
+        "lon": 13.392799,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 5,
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -638,12 +638,12 @@
         "type": "position",
         "vehicleId": "veh-2",
         "routeId": "route-kreuzberg",
-        "lat": 52.505804,
-        "lon": 13.406737,
+        "lat": 52.50376,
+        "lon": 13.416148,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
+        "stopsRemaining": 4,
+        "ts": 1787838369627
       }
     },
     {
@@ -653,12 +653,12 @@
         "type": "position",
         "vehicleId": "veh-3",
         "routeId": "route-prenzlauer",
-        "lat": 52.540599,
-        "lon": 13.427042,
+        "lat": 52.53534,
+        "lon": 13.418722,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 7,
+        "ts": 1787838369627
       }
     },
     {
@@ -668,12 +668,12 @@
         "type": "position",
         "vehicleId": "veh-4",
         "routeId": "route-charlottenburg",
-        "lat": 52.505401,
-        "lon": 13.306859,
+        "lat": 52.504929,
+        "lon": 13.310484,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 7,
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -683,12 +683,12 @@
         "type": "position",
         "vehicleId": "veh-5",
         "routeId": "route-mitte",
-        "lat": 52.521286,
-        "lon": 13.393598,
+        "lat": 52.520149,
+        "lon": 13.394271,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369627
       }
     },
     {
@@ -698,12 +698,12 @@
         "type": "position",
         "vehicleId": "veh-6",
         "routeId": "route-kreuzberg",
-        "lat": 52.499957,
-        "lon": 13.413067,
+        "lat": 52.498317,
+        "lon": 13.405687,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369627
       }
     },
     {
@@ -713,12 +713,12 @@
         "type": "position",
         "vehicleId": "veh-7",
         "routeId": "route-prenzlauer",
-        "lat": 52.543383,
-        "lon": 13.417278,
+        "lat": 52.543077,
+        "lon": 13.41645,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 4,
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -728,12 +728,12 @@
         "type": "position",
         "vehicleId": "veh-8",
         "routeId": "route-charlottenburg",
-        "lat": 52.511902,
-        "lon": 13.322448,
+        "lat": 52.505115,
+        "lon": 13.311893,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369627
       }
     },
     {
@@ -743,12 +743,12 @@
         "type": "position",
         "vehicleId": "veh-1",
         "routeId": "route-mitte",
-        "lat": 52.522621,
-        "lon": 13.390825,
+        "lat": 52.521848,
+        "lon": 13.392464,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 5,
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -758,12 +758,12 @@
         "type": "position",
         "vehicleId": "veh-2",
         "routeId": "route-kreuzberg",
-        "lat": 52.505491,
-        "lon": 13.406024,
+        "lat": 52.503977,
+        "lon": 13.415365,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
+        "stopsRemaining": 4,
+        "ts": 1787838369627
       }
     },
     {
@@ -773,12 +773,12 @@
         "type": "position",
         "vehicleId": "veh-3",
         "routeId": "route-prenzlauer",
-        "lat": 52.540881,
-        "lon": 13.426552,
+        "lat": 52.535586,
+        "lon": 13.419036,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 7,
+        "ts": 1787838369627
       }
     },
     {
@@ -786,13 +786,13 @@
       "event": "disruption",
       "disruption": {
         "type": "disruption",
-        "disruptionId": "20f8e84e-c77c-46c5-bdc9-2915e8a998fb",
+        "disruptionId": "587f7c76-9448-4b08-875a-1b525b94f189",
         "kind": "road_closure",
         "vehicleId": "veh-3",
-        "lat": 52.540881,
-        "lon": 13.426552,
+        "lat": 52.535586,
+        "lon": 13.419036,
         "note": "Street closed for event (synthetic)",
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -802,12 +802,12 @@
         "type": "position",
         "vehicleId": "veh-4",
         "routeId": "route-charlottenburg",
-        "lat": 52.505445,
-        "lon": 13.30738,
+        "lat": 52.505056,
+        "lon": 13.310926,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 7,
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -817,12 +817,12 @@
         "type": "position",
         "vehicleId": "veh-5",
         "routeId": "route-mitte",
-        "lat": 52.521336,
-        "lon": 13.392961,
+        "lat": 52.520313,
+        "lon": 13.394564,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369627
       }
     },
     {
@@ -832,12 +832,12 @@
         "type": "position",
         "vehicleId": "veh-6",
         "routeId": "route-kreuzberg",
-        "lat": 52.500413,
-        "lon": 13.413547,
+        "lat": 52.498385,
+        "lon": 13.406401,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369627
       }
     },
     {
@@ -847,12 +847,12 @@
         "type": "position",
         "vehicleId": "veh-7",
         "routeId": "route-prenzlauer",
-        "lat": 52.543174,
-        "lon": 13.416685,
+        "lat": 52.542915,
+        "lon": 13.415466,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 4,
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -862,12 +862,12 @@
         "type": "position",
         "vehicleId": "veh-8",
         "routeId": "route-charlottenburg",
-        "lat": 52.512156,
-        "lon": 13.321703,
+        "lat": 52.505471,
+        "lon": 13.312496,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369627
       }
     },
     {
@@ -877,12 +877,12 @@
         "type": "position",
         "vehicleId": "veh-1",
         "routeId": "route-mitte",
-        "lat": 52.522817,
-        "lon": 13.390247,
+        "lat": 52.521824,
+        "lon": 13.392079,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 5,
-        "ts": 1787836090971
+        "ts": 1787838369627
       }
     },
     {
@@ -892,12 +892,12 @@
         "type": "position",
         "vehicleId": "veh-2",
         "routeId": "route-kreuzberg",
-        "lat": 52.505334,
-        "lon": 13.405029,
+        "lat": 52.504086,
+        "lon": 13.414824,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
+        "stopsRemaining": 4,
+        "ts": 1787838369627
       }
     },
     {
@@ -907,12 +907,12 @@
         "type": "position",
         "vehicleId": "veh-3",
         "routeId": "route-prenzlauer",
-        "lat": 52.541198,
-        "lon": 13.426075,
+        "lat": 52.535671,
+        "lon": 13.41956,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 7,
+        "ts": 1787838369627
       }
     },
     {
@@ -922,12 +922,12 @@
         "type": "position",
         "vehicleId": "veh-4",
         "routeId": "route-charlottenburg",
-        "lat": 52.505218,
-        "lon": 13.308158,
+        "lat": 52.505978,
+        "lon": 13.302527,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 7,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369627
       }
     },
     {
@@ -937,12 +937,12 @@
         "type": "position",
         "vehicleId": "veh-5",
         "routeId": "route-mitte",
-        "lat": 52.521808,
-        "lon": 13.392477,
+        "lat": 52.52045,
+        "lon": 13.394973,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369627
       }
     },
     {
@@ -952,12 +952,12 @@
         "type": "position",
         "vehicleId": "veh-6",
         "routeId": "route-kreuzberg",
-        "lat": 52.50045,
-        "lon": 13.413684,
+        "lat": 52.498714,
+        "lon": 13.407334,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369627
       }
     },
     {
@@ -967,12 +967,12 @@
         "type": "position",
         "vehicleId": "veh-7",
         "routeId": "route-prenzlauer",
-        "lat": 52.543106,
-        "lon": 13.415833,
+        "lat": 52.543025,
+        "lon": 13.414954,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 4,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -982,12 +982,12 @@
         "type": "position",
         "vehicleId": "veh-8",
         "routeId": "route-charlottenburg",
-        "lat": 52.512333,
-        "lon": 13.32102,
+        "lat": 52.505623,
+        "lon": 13.31291,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
@@ -997,12 +997,12 @@
         "type": "position",
         "vehicleId": "veh-1",
         "routeId": "route-mitte",
-        "lat": 52.523051,
-        "lon": 13.389987,
+        "lat": 52.52207,
+        "lon": 13.39181,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 5,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -1012,12 +1012,12 @@
         "type": "position",
         "vehicleId": "veh-2",
         "routeId": "route-kreuzberg",
-        "lat": 52.505454,
-        "lon": 13.4043,
+        "lat": 52.504273,
+        "lon": 13.414244,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
+        "stopsRemaining": 4,
+        "ts": 1787838369628
       }
     },
     {
@@ -1027,12 +1027,12 @@
         "type": "position",
         "vehicleId": "veh-3",
         "routeId": "route-prenzlauer",
-        "lat": 52.541398,
-        "lon": 13.425498,
+        "lat": 52.531969,
+        "lon": 13.413237,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
@@ -1042,12 +1042,12 @@
         "type": "position",
         "vehicleId": "veh-4",
         "routeId": "route-charlottenburg",
-        "lat": 52.505321,
-        "lon": 13.308654,
+        "lat": 52.505398,
+        "lon": 13.312172,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 7,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
@@ -1057,12 +1057,12 @@
         "type": "position",
         "vehicleId": "veh-5",
         "routeId": "route-mitte",
-        "lat": 52.521836,
-        "lon": 13.392116,
+        "lat": 52.518252,
+        "lon": 13.390136,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 5,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -1072,12 +1072,12 @@
         "type": "position",
         "vehicleId": "veh-6",
         "routeId": "route-kreuzberg",
-        "lat": 52.50069,
-        "lon": 13.414153,
+        "lat": 52.49888,
+        "lon": 13.408149,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
@@ -1087,12 +1087,12 @@
         "type": "position",
         "vehicleId": "veh-7",
         "routeId": "route-prenzlauer",
-        "lat": 52.543005,
-        "lon": 13.415243,
+        "lat": 52.54267,
+        "lon": 13.414191,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 4,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -1102,12 +1102,12 @@
         "type": "position",
         "vehicleId": "veh-8",
         "routeId": "route-charlottenburg",
-        "lat": 52.512504,
-        "lon": 13.320413,
+        "lat": 52.505697,
+        "lon": 13.313542,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
@@ -1117,12 +1117,12 @@
         "type": "position",
         "vehicleId": "veh-1",
         "routeId": "route-mitte",
-        "lat": 52.523197,
-        "lon": 13.389484,
+        "lat": 52.522224,
+        "lon": 13.391345,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 5,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -1132,12 +1132,12 @@
         "type": "position",
         "vehicleId": "veh-2",
         "routeId": "route-kreuzberg",
-        "lat": 52.505253,
-        "lon": 13.403713,
+        "lat": 52.504532,
+        "lon": 13.413622,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
+        "stopsRemaining": 4,
+        "ts": 1787838369628
       }
     },
     {
@@ -1147,12 +1147,12 @@
         "type": "position",
         "vehicleId": "veh-3",
         "routeId": "route-prenzlauer",
-        "lat": 52.541577,
-        "lon": 13.425246,
+        "lat": 52.536296,
+        "lon": 13.420716,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
@@ -1162,12 +1162,12 @@
         "type": "position",
         "vehicleId": "veh-4",
         "routeId": "route-charlottenburg",
-        "lat": 52.505156,
-        "lon": 13.309312,
+        "lat": 52.505379,
+        "lon": 13.312777,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 7,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
@@ -1177,12 +1177,12 @@
         "type": "position",
         "vehicleId": "veh-5",
         "routeId": "route-mitte",
-        "lat": 52.52209,
-        "lon": 13.391642,
+        "lat": 52.520935,
+        "lon": 13.394246,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 5,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -1192,12 +1192,12 @@
         "type": "position",
         "vehicleId": "veh-6",
         "routeId": "route-kreuzberg",
-        "lat": 52.500963,
-        "lon": 13.414708,
+        "lat": 52.498789,
+        "lon": 13.40866,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
@@ -1207,12 +1207,12 @@
         "type": "position",
         "vehicleId": "veh-7",
         "routeId": "route-prenzlauer",
-        "lat": 52.542733,
-        "lon": 13.414243,
+        "lat": 52.542676,
+        "lon": 13.413288,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 4,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -1222,34 +1222,34 @@
         "type": "position",
         "vehicleId": "veh-8",
         "routeId": "route-charlottenburg",
-        "lat": 52.512748,
-        "lon": 13.319821,
+        "lat": 52.505812,
+        "lon": 13.31442,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
       "at": 13500,
       "event": "agent_proposal",
-      "approvalId": "99de7903-a3a5-427b-938a-06a9a5f49238",
+      "approvalId": "7c541a2b-0d05-4738-9271-45f93b806cf9",
       "vehicleId": "veh-3",
       "rationale": "Marienstrasse is closed for a street event, blocking the next stop on this loop. The re-planner removed the closed segment and re-optimised the next four stops, visiting them in reverse to approach the blocked stop from the far side. Estimated added delay: about 4 minutes.",
       "affectedStops": 4,
       "estDelayMin": 4,
       "detourWaypoints": [
         [
-          13.428351999999999,
-          52.541281
+          13.420836,
+          52.535986
         ],
         [
-          13.428552,
-          52.542481
+          13.421036,
+          52.537186000000005
         ],
         [
-          13.427152,
-          52.543081
+          13.419636,
+          52.537786000000004
         ]
       ],
       "requiresApproval": true,
@@ -1275,12 +1275,12 @@
         "type": "position",
         "vehicleId": "veh-1",
         "routeId": "route-mitte",
-        "lat": 52.523492,
-        "lon": 13.389013,
+        "lat": 52.522614,
+        "lon": 13.390746,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 5,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -1290,12 +1290,12 @@
         "type": "position",
         "vehicleId": "veh-2",
         "routeId": "route-kreuzberg",
-        "lat": 52.505155,
-        "lon": 13.402936,
+        "lat": 52.504589,
+        "lon": 13.41282,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
+        "stopsRemaining": 4,
+        "ts": 1787838369628
       }
     },
     {
@@ -1305,267 +1305,267 @@
         "type": "position",
         "vehicleId": "veh-3",
         "routeId": "route-prenzlauer",
-        "lat": 52.541843,
-        "lon": 13.424513,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 15000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.505142,
-        "lon": 13.310167,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 7,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 15000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-5",
-        "routeId": "route-mitte",
-        "lat": 52.52225,
-        "lon": 13.391263,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 15000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-6",
-        "routeId": "route-kreuzberg",
-        "lat": 52.501157,
-        "lon": 13.415217,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 15000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-7",
-        "routeId": "route-prenzlauer",
-        "lat": 52.542675,
-        "lon": 13.413699,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 15000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-8",
-        "routeId": "route-charlottenburg",
-        "lat": 52.512926,
-        "lon": 13.31903,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 16500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-1",
-        "routeId": "route-mitte",
-        "lat": 52.520619,
-        "lon": 13.394646,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 16500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-2",
-        "routeId": "route-kreuzberg",
-        "lat": 52.505186,
-        "lon": 13.401954,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 16500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-3",
-        "routeId": "route-prenzlauer",
-        "lat": 52.54223,
-        "lon": 13.424024,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 16500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.505037,
-        "lon": 13.310726,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 7,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 16500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-5",
-        "routeId": "route-mitte",
-        "lat": 52.522581,
-        "lon": 13.390847,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 16500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-6",
-        "routeId": "route-kreuzberg",
-        "lat": 52.501505,
-        "lon": 13.41557,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 16500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-7",
-        "routeId": "route-prenzlauer",
-        "lat": 52.542497,
-        "lon": 13.41273,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 16500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-8",
-        "routeId": "route-charlottenburg",
-        "lat": 52.513026,
-        "lon": 13.318673,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 18000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-1",
-        "routeId": "route-mitte",
-        "lat": 52.523268,
-        "lon": 13.387964,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 18000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-2",
-        "routeId": "route-kreuzberg",
-        "lat": 52.505082,
-        "lon": 13.401398,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 18000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-3",
-        "routeId": "route-prenzlauer",
-        "lat": 52.542481,
-        "lon": 13.423555,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 18000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.506002,
-        "lon": 13.302156,
+        "lat": 52.536623,
+        "lon": 13.421237,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 6,
-        "ts": 1787836090971
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 15000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.505744,
+        "lon": 13.31344,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 6,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 15000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-5",
+        "routeId": "route-mitte",
+        "lat": 52.521001,
+        "lon": 13.393945,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 15000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-6",
+        "routeId": "route-kreuzberg",
+        "lat": 52.498927,
+        "lon": 13.409464,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 6,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 15000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-7",
+        "routeId": "route-prenzlauer",
+        "lat": 52.542544,
+        "lon": 13.412412,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 15000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-8",
+        "routeId": "route-charlottenburg",
+        "lat": 52.506089,
+        "lon": 13.314789,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 6,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 16500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-1",
+        "routeId": "route-mitte",
+        "lat": 52.522723,
+        "lon": 13.390465,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 16500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-2",
+        "routeId": "route-kreuzberg",
+        "lat": 52.504973,
+        "lon": 13.412245,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 16500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-3",
+        "routeId": "route-prenzlauer",
+        "lat": 52.536997,
+        "lon": 13.42186,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 6,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 16500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.505913,
+        "lon": 13.314,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 6,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 16500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-5",
+        "routeId": "route-mitte",
+        "lat": 52.52136,
+        "lon": 13.393575,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 16500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-6",
+        "routeId": "route-kreuzberg",
+        "lat": 52.49912,
+        "lon": 13.410404,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 6,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 16500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-7",
+        "routeId": "route-prenzlauer",
+        "lat": 52.54239,
+        "lon": 13.411687,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 16500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-8",
+        "routeId": "route-charlottenburg",
+        "lat": 52.506266,
+        "lon": 13.315606,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 6,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 18000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-1",
+        "routeId": "route-mitte",
+        "lat": 52.522954,
+        "lon": 13.390155,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 18000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-2",
+        "routeId": "route-kreuzberg",
+        "lat": 52.505185,
+        "lon": 13.411525,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 18000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-3",
+        "routeId": "route-prenzlauer",
+        "lat": 52.537166,
+        "lon": 13.422435,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 6,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 18000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.505925,
+        "lon": 13.314889,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
@@ -1575,12 +1575,12 @@
         "type": "position",
         "vehicleId": "veh-5",
         "routeId": "route-mitte",
-        "lat": 52.522822,
-        "lon": 13.390388,
+        "lat": 52.521559,
+        "lon": 13.393051,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 5,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -1590,12 +1590,12 @@
         "type": "position",
         "vehicleId": "veh-6",
         "routeId": "route-kreuzberg",
-        "lat": 52.501852,
-        "lon": 13.415835,
+        "lat": 52.499209,
+        "lon": 13.411149,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
@@ -1605,12 +1605,12 @@
         "type": "position",
         "vehicleId": "veh-7",
         "routeId": "route-prenzlauer",
-        "lat": 52.542493,
-        "lon": 13.412018,
+        "lat": 52.542221,
+        "lon": 13.410978,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 4,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -1620,147 +1620,147 @@
         "type": "position",
         "vehicleId": "veh-8",
         "routeId": "route-charlottenburg",
-        "lat": 52.513335,
-        "lon": 13.317943,
+        "lat": 52.506493,
+        "lon": 13.316231,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
       "at": 19500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-1",
+        "routeId": "route-mitte",
+        "lat": 52.523266,
+        "lon": 13.389638,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 19500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-2",
+        "routeId": "route-kreuzberg",
+        "lat": 52.505211,
+        "lon": 13.410896,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 19500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-3",
+        "routeId": "route-prenzlauer",
+        "lat": 52.537417,
+        "lon": 13.422994,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 6,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 19500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.506109,
+        "lon": 13.315467,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 6,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 19500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-5",
+        "routeId": "route-mitte",
+        "lat": 52.521716,
+        "lon": 13.392705,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 19500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-6",
+        "routeId": "route-kreuzberg",
+        "lat": 52.499539,
+        "lon": 13.41192,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 6,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 19500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-7",
+        "routeId": "route-prenzlauer",
+        "lat": 52.542051,
+        "lon": 13.410091,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 19500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-8",
+        "routeId": "route-charlottenburg",
+        "lat": 52.506609,
+        "lon": 13.316823,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 6,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 21000,
       "event": "position",
       "vehicle": {
         "type": "position",
         "vehicleId": "veh-1",
         "routeId": "route-mitte",
         "lat": 52.523457,
-        "lon": 13.387414,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 19500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-2",
-        "routeId": "route-kreuzberg",
-        "lat": 52.504909,
-        "lon": 13.400436,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 19500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-3",
-        "routeId": "route-prenzlauer",
-        "lat": 52.542667,
-        "lon": 13.423227,
+        "lon": 13.389242,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 19500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.505344,
-        "lon": 13.311864,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 6,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 19500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-5",
-        "routeId": "route-mitte",
-        "lat": 52.522914,
-        "lon": 13.39021,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 19500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-6",
-        "routeId": "route-kreuzberg",
-        "lat": 52.50191,
-        "lon": 13.416314,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 19500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-7",
-        "routeId": "route-prenzlauer",
-        "lat": 52.542324,
-        "lon": 13.411365,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 19500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-8",
-        "routeId": "route-charlottenburg",
-        "lat": 52.513675,
-        "lon": 13.317339,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 21000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-1",
-        "routeId": "route-mitte",
-        "lat": 52.523299,
-        "lon": 13.386772,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -1770,12 +1770,12 @@
         "type": "position",
         "vehicleId": "veh-2",
         "routeId": "route-kreuzberg",
-        "lat": 52.50467,
-        "lon": 13.399599,
+        "lat": 52.505535,
+        "lon": 13.410373,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
+        "stopsRemaining": 4,
+        "ts": 1787838369628
       }
     },
     {
@@ -1785,12 +1785,12 @@
         "type": "position",
         "vehicleId": "veh-3",
         "routeId": "route-prenzlauer",
-        "lat": 52.543041,
-        "lon": 13.422803,
+        "lat": 52.537788,
+        "lon": 13.423669,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
@@ -1800,12 +1800,12 @@
         "type": "position",
         "vehicleId": "veh-4",
         "routeId": "route-charlottenburg",
-        "lat": 52.505447,
-        "lon": 13.312587,
+        "lat": 52.506534,
+        "lon": 13.315886,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 6,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -1815,12 +1815,12 @@
         "type": "position",
         "vehicleId": "veh-5",
         "routeId": "route-mitte",
-        "lat": 52.523198,
-        "lon": 13.389726,
+        "lat": 52.52187,
+        "lon": 13.392091,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 5,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -1830,12 +1830,12 @@
         "type": "position",
         "vehicleId": "veh-6",
         "routeId": "route-kreuzberg",
-        "lat": 52.502294,
-        "lon": 13.41674,
+        "lat": 52.497729,
+        "lon": 13.401476,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 5,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -1845,12 +1845,12 @@
         "type": "position",
         "vehicleId": "veh-7",
         "routeId": "route-prenzlauer",
-        "lat": 52.542065,
-        "lon": 13.410616,
+        "lat": 52.543791,
+        "lon": 13.420377,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 3,
+        "ts": 1787838369628
       }
     },
     {
@@ -1860,12 +1860,12 @@
         "type": "position",
         "vehicleId": "veh-8",
         "routeId": "route-charlottenburg",
-        "lat": 52.513764,
-        "lon": 13.316586,
+        "lat": 52.506882,
+        "lon": 13.317428,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
@@ -1875,12 +1875,12 @@
         "type": "position",
         "vehicleId": "veh-1",
         "routeId": "route-mitte",
-        "lat": 52.523222,
-        "lon": 13.386109,
+        "lat": 52.520729,
+        "lon": 13.394724,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 4,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -1890,12 +1890,12 @@
         "type": "position",
         "vehicleId": "veh-2",
         "routeId": "route-kreuzberg",
-        "lat": 52.504574,
-        "lon": 13.398889,
+        "lat": 52.505779,
+        "lon": 13.409778,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
+        "stopsRemaining": 4,
+        "ts": 1787838369628
       }
     },
     {
@@ -1905,12 +1905,12 @@
         "type": "position",
         "vehicleId": "veh-3",
         "routeId": "route-prenzlauer",
-        "lat": 52.543398,
-        "lon": 13.422204,
+        "lat": 52.538108,
+        "lon": 13.42401,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
@@ -1920,12 +1920,12 @@
         "type": "position",
         "vehicleId": "veh-4",
         "routeId": "route-charlottenburg",
-        "lat": 52.505562,
-        "lon": 13.313075,
+        "lat": 52.506474,
+        "lon": 13.316532,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 6,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -1935,12 +1935,12 @@
         "type": "position",
         "vehicleId": "veh-5",
         "routeId": "route-mitte",
-        "lat": 52.523381,
-        "lon": 13.389154,
+        "lat": 52.521982,
+        "lon": 13.391811,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 5,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -1950,12 +1950,12 @@
         "type": "position",
         "vehicleId": "veh-6",
         "routeId": "route-kreuzberg",
-        "lat": 52.502422,
-        "lon": 13.417174,
+        "lat": 52.500093,
+        "lon": 13.412818,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 5,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -1965,12 +1965,12 @@
         "type": "position",
         "vehicleId": "veh-7",
         "routeId": "route-prenzlauer",
-        "lat": 52.544028,
-        "lon": 13.420818,
+        "lat": 52.541277,
+        "lon": 13.409474,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 3,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -1980,12 +1980,12 @@
         "type": "position",
         "vehicleId": "veh-8",
         "routeId": "route-charlottenburg",
-        "lat": 52.513856,
-        "lon": 13.316092,
+        "lat": 52.507053,
+        "lon": 13.318073,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
@@ -1995,12 +1995,12 @@
         "type": "position",
         "vehicleId": "veh-1",
         "routeId": "route-mitte",
-        "lat": 52.523153,
-        "lon": 13.385311,
+        "lat": 52.523267,
+        "lon": 13.387998,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 4,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -2010,12 +2010,12 @@
         "type": "position",
         "vehicleId": "veh-2",
         "routeId": "route-kreuzberg",
-        "lat": 52.504508,
-        "lon": 13.398142,
+        "lat": 52.505857,
+        "lon": 13.409063,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
+        "stopsRemaining": 4,
+        "ts": 1787838369628
       }
     },
     {
@@ -2025,12 +2025,12 @@
         "type": "position",
         "vehicleId": "veh-3",
         "routeId": "route-prenzlauer",
-        "lat": 52.543696,
-        "lon": 13.421607,
+        "lat": 52.538396,
+        "lon": 13.42475,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
@@ -2040,12 +2040,12 @@
         "type": "position",
         "vehicleId": "veh-4",
         "routeId": "route-charlottenburg",
-        "lat": 52.505909,
-        "lon": 13.313694,
+        "lat": 52.506715,
+        "lon": 13.31727,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 6,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -2055,12 +2055,12 @@
         "type": "position",
         "vehicleId": "veh-5",
         "routeId": "route-mitte",
-        "lat": 52.520664,
-        "lon": 13.394814,
+        "lat": 52.522256,
+        "lon": 13.391361,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2070,12 +2070,12 @@
         "type": "position",
         "vehicleId": "veh-6",
         "routeId": "route-kreuzberg",
-        "lat": 52.502735,
-        "lon": 13.417544,
+        "lat": 52.50004,
+        "lon": 13.413232,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 5,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -2085,12 +2085,12 @@
         "type": "position",
         "vehicleId": "veh-7",
         "routeId": "route-prenzlauer",
-        "lat": 52.54146,
-        "lon": 13.409541,
+        "lat": 52.541137,
+        "lon": 13.409105,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 3,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -2100,12 +2100,12 @@
         "type": "position",
         "vehicleId": "veh-8",
         "routeId": "route-charlottenburg",
-        "lat": 52.511214,
-        "lon": 13.324431,
+        "lat": 52.507072,
+        "lon": 13.31883,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
@@ -2114,19 +2114,19 @@
       "vehicleId": "veh-3",
       "detourWaypoints": [
         [
-          13.428351999999999,
-          52.541281
+          13.420836,
+          52.535986
         ],
         [
-          13.428552,
-          52.542481
+          13.421036,
+          52.537186000000005
         ],
         [
-          13.427152,
-          52.543081
+          13.419636,
+          52.537786000000004
         ]
       ],
-      "approvalId": "99de7903-a3a5-427b-938a-06a9a5f49238",
+      "approvalId": "7c541a2b-0d05-4738-9271-45f93b806cf9",
       "autoApplied": false
     },
     {
@@ -2136,12 +2136,12 @@
         "type": "position",
         "vehicleId": "veh-1",
         "routeId": "route-mitte",
-        "lat": 52.522975,
-        "lon": 13.384893,
+        "lat": 52.523415,
+        "lon": 13.387386,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 4,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -2151,12 +2151,12 @@
         "type": "position",
         "vehicleId": "veh-2",
         "routeId": "route-kreuzberg",
-        "lat": 52.505882,
-        "lon": 13.408497,
+        "lat": 52.503315,
+        "lon": 13.417522,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
+        "stopsRemaining": 3,
+        "ts": 1787838369628
       }
     },
     {
@@ -2166,12 +2166,12 @@
         "type": "position",
         "vehicleId": "veh-3",
         "routeId": "route-prenzlauer",
-        "lat": 52.543765,
-        "lon": 13.421368,
+        "lat": 52.538535,
+        "lon": 13.425081,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
@@ -2181,12 +2181,12 @@
         "type": "position",
         "vehicleId": "veh-4",
         "routeId": "route-charlottenburg",
-        "lat": 52.505855,
-        "lon": 13.314344,
+        "lat": 52.50684,
+        "lon": 13.317918,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 6,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -2196,12 +2196,12 @@
         "type": "position",
         "vehicleId": "veh-5",
         "routeId": "route-mitte",
-        "lat": 52.523448,
-        "lon": 13.388164,
+        "lat": 52.522583,
+        "lon": 13.390986,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2211,12 +2211,12 @@
         "type": "position",
         "vehicleId": "veh-6",
         "routeId": "route-kreuzberg",
-        "lat": 52.499632,
-        "lon": 13.412006,
+        "lat": 52.500436,
+        "lon": 13.413729,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2226,12 +2226,12 @@
         "type": "position",
         "vehicleId": "veh-7",
         "routeId": "route-prenzlauer",
-        "lat": 52.541307,
-        "lon": 13.409108,
+        "lat": 52.540776,
+        "lon": 13.408691,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 3,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -2241,12 +2241,12 @@
         "type": "position",
         "vehicleId": "veh-8",
         "routeId": "route-charlottenburg",
-        "lat": 52.513852,
-        "lon": 13.31438,
+        "lat": 52.507183,
+        "lon": 13.319293,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
@@ -2256,12 +2256,12 @@
         "type": "position",
         "vehicleId": "veh-1",
         "routeId": "route-mitte",
-        "lat": 52.523084,
-        "lon": 13.384143,
+        "lat": 52.523313,
+        "lon": 13.386625,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 4,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -2271,12 +2271,12 @@
         "type": "position",
         "vehicleId": "veh-2",
         "routeId": "route-kreuzberg",
-        "lat": 52.503923,
-        "lon": 13.39688,
+        "lat": 52.505821,
+        "lon": 13.407577,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
+        "stopsRemaining": 3,
+        "ts": 1787838369628
       }
     },
     {
@@ -2286,12 +2286,12 @@
         "type": "position",
         "vehicleId": "veh-3",
         "routeId": "route-prenzlauer",
-        "lat": 52.540275,
-        "lon": 13.427874,
+        "lat": 52.538959,
+        "lon": 13.425694,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
@@ -2301,12 +2301,12 @@
         "type": "position",
         "vehicleId": "veh-4",
         "routeId": "route-charlottenburg",
-        "lat": 52.506079,
-        "lon": 13.315064,
+        "lat": 52.507029,
+        "lon": 13.318405,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 6,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -2316,12 +2316,12 @@
         "type": "position",
         "vehicleId": "veh-5",
         "routeId": "route-mitte",
-        "lat": 52.523419,
-        "lon": 13.387492,
+        "lat": 52.52279,
+        "lon": 13.390573,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2331,12 +2331,12 @@
         "type": "position",
         "vehicleId": "veh-6",
         "routeId": "route-kreuzberg",
-        "lat": 52.503218,
-        "lon": 13.41743,
+        "lat": 52.500698,
+        "lon": 13.41388,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2346,12 +2346,12 @@
         "type": "position",
         "vehicleId": "veh-7",
         "routeId": "route-prenzlauer",
-        "lat": 52.540765,
-        "lon": 13.408823,
+        "lat": 52.540324,
+        "lon": 13.408347,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 3,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -2361,72 +2361,72 @@
         "type": "position",
         "vehicleId": "veh-8",
         "routeId": "route-charlottenburg",
-        "lat": 52.513681,
-        "lon": 13.313633,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 28500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-1",
-        "routeId": "route-mitte",
-        "lat": 52.523022,
-        "lon": 13.383481,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 28500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-2",
-        "routeId": "route-kreuzberg",
-        "lat": 52.503377,
-        "lon": 13.396568,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 28500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-3",
-        "routeId": "route-prenzlauer",
-        "lat": 52.543765,
-        "lon": 13.419736,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 28500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.506343,
-        "lon": 13.315569,
+        "lat": 52.507596,
+        "lon": 13.320126,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 6,
-        "ts": 1787836090971
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 28500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-1",
+        "routeId": "route-mitte",
+        "lat": 52.523112,
+        "lon": 13.386185,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 28500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-2",
+        "routeId": "route-kreuzberg",
+        "lat": 52.505665,
+        "lon": 13.406753,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 28500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-3",
+        "routeId": "route-prenzlauer",
+        "lat": 52.539227,
+        "lon": 13.426456,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 6,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 28500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.507192,
+        "lon": 13.319278,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
@@ -2436,12 +2436,12 @@
         "type": "position",
         "vehicleId": "veh-5",
         "routeId": "route-mitte",
-        "lat": 52.523119,
-        "lon": 13.38689,
+        "lat": 52.52285,
+        "lon": 13.39026,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2451,12 +2451,12 @@
         "type": "position",
         "vehicleId": "veh-6",
         "routeId": "route-kreuzberg",
-        "lat": 52.503512,
-        "lon": 13.416605,
+        "lat": 52.501001,
+        "lon": 13.414299,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2466,12 +2466,12 @@
         "type": "position",
         "vehicleId": "veh-7",
         "routeId": "route-prenzlauer",
-        "lat": 52.540389,
-        "lon": 13.408559,
+        "lat": 52.540035,
+        "lon": 13.408035,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 3,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -2481,12 +2481,12 @@
         "type": "position",
         "vehicleId": "veh-8",
         "routeId": "route-charlottenburg",
-        "lat": 52.513575,
-        "lon": 13.312805,
+        "lat": 52.505023,
+        "lon": 13.311744,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2496,12 +2496,12 @@
         "type": "position",
         "vehicleId": "veh-1",
         "routeId": "route-mitte",
-        "lat": 52.522716,
-        "lon": 13.382896,
+        "lat": 52.523099,
+        "lon": 13.385574,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 4,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -2511,12 +2511,12 @@
         "type": "position",
         "vehicleId": "veh-2",
         "routeId": "route-kreuzberg",
-        "lat": 52.503148,
-        "lon": 13.395809,
+        "lat": 52.505473,
+        "lon": 13.406153,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
+        "stopsRemaining": 3,
+        "ts": 1787838369628
       }
     },
     {
@@ -2526,27 +2526,27 @@
         "type": "position",
         "vehicleId": "veh-3",
         "routeId": "route-prenzlauer",
-        "lat": 52.54364,
-        "lon": 13.419001,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 30000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.506426,
-        "lon": 13.316432,
+        "lat": 52.539377,
+        "lon": 13.426776,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 6,
-        "ts": 1787836090971
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 30000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.507326,
+        "lon": 13.31977,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 6,
+        "ts": 1787838369628
       }
     },
     {
@@ -2556,12 +2556,12 @@
         "type": "position",
         "vehicleId": "veh-5",
         "routeId": "route-mitte",
-        "lat": 52.52316,
-        "lon": 13.386222,
+        "lat": 52.523252,
+        "lon": 13.38965,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2571,12 +2571,12 @@
         "type": "position",
         "vehicleId": "veh-6",
         "routeId": "route-kreuzberg",
-        "lat": 52.503686,
-        "lon": 13.416085,
+        "lat": 52.501109,
+        "lon": 13.414914,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2586,12 +2586,12 @@
         "type": "position",
         "vehicleId": "veh-7",
         "routeId": "route-prenzlauer",
-        "lat": 52.539978,
-        "lon": 13.408011,
+        "lat": 52.539679,
+        "lon": 13.407506,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 3,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -2601,12 +2601,12 @@
         "type": "position",
         "vehicleId": "veh-8",
         "routeId": "route-charlottenburg",
-        "lat": 52.513326,
-        "lon": 13.31204,
+        "lat": 52.507991,
+        "lon": 13.320836,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2616,12 +2616,12 @@
         "type": "position",
         "vehicleId": "veh-1",
         "routeId": "route-mitte",
-        "lat": 52.522687,
-        "lon": 13.382392,
+        "lat": 52.523068,
+        "lon": 13.384932,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 4,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -2631,12 +2631,12 @@
         "type": "position",
         "vehicleId": "veh-2",
         "routeId": "route-kreuzberg",
-        "lat": 52.502555,
-        "lon": 13.395359,
+        "lat": 52.505472,
+        "lon": 13.405303,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
+        "stopsRemaining": 3,
+        "ts": 1787838369628
       }
     },
     {
@@ -2646,27 +2646,27 @@
         "type": "position",
         "vehicleId": "veh-3",
         "routeId": "route-prenzlauer",
-        "lat": 52.543439,
-        "lon": 13.418238,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 31500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.506519,
-        "lon": 13.316809,
+        "lat": 52.539612,
+        "lon": 13.427599,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 6,
-        "ts": 1787836090971
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 31500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.505094,
+        "lon": 13.311348,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2676,12 +2676,12 @@
         "type": "position",
         "vehicleId": "veh-5",
         "routeId": "route-mitte",
-        "lat": 52.523071,
-        "lon": 13.385518,
+        "lat": 52.523481,
+        "lon": 13.389133,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2691,12 +2691,12 @@
         "type": "position",
         "vehicleId": "veh-6",
         "routeId": "route-kreuzberg",
-        "lat": 52.503725,
-        "lon": 13.415411,
+        "lat": 52.501284,
+        "lon": 13.41513,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2706,12 +2706,12 @@
         "type": "position",
         "vehicleId": "veh-7",
         "routeId": "route-prenzlauer",
-        "lat": 52.539917,
-        "lon": 13.407867,
+        "lat": 52.539353,
+        "lon": 13.40731,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 3,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -2721,12 +2721,12 @@
         "type": "position",
         "vehicleId": "veh-8",
         "routeId": "route-charlottenburg",
-        "lat": 52.513189,
-        "lon": 13.311337,
+        "lat": 52.50837,
+        "lon": 13.321011,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2736,12 +2736,12 @@
         "type": "position",
         "vehicleId": "veh-1",
         "routeId": "route-mitte",
-        "lat": 52.522569,
-        "lon": 13.381492,
+        "lat": 52.52297,
+        "lon": 13.384191,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 4,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -2751,12 +2751,12 @@
         "type": "position",
         "vehicleId": "veh-2",
         "routeId": "route-kreuzberg",
-        "lat": 52.502183,
-        "lon": 13.394887,
+        "lat": 52.505253,
+        "lon": 13.404531,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
+        "stopsRemaining": 3,
+        "ts": 1787838369628
       }
     },
     {
@@ -2766,12 +2766,12 @@
         "type": "position",
         "vehicleId": "veh-3",
         "routeId": "route-prenzlauer",
-        "lat": 52.543261,
-        "lon": 13.417464,
+        "lat": 52.536077,
+        "lon": 13.419962,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2781,12 +2781,12 @@
         "type": "position",
         "vehicleId": "veh-4",
         "routeId": "route-charlottenburg",
-        "lat": 52.506902,
-        "lon": 13.317539,
+        "lat": 52.50798,
+        "lon": 13.320681,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 6,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2796,12 +2796,12 @@
         "type": "position",
         "vehicleId": "veh-5",
         "routeId": "route-mitte",
-        "lat": 52.523043,
-        "lon": 13.384831,
+        "lat": 52.520672,
+        "lon": 13.394836,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 4,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -2811,12 +2811,12 @@
         "type": "position",
         "vehicleId": "veh-6",
         "routeId": "route-kreuzberg",
-        "lat": 52.504,
-        "lon": 13.414752,
+        "lat": 52.50165,
+        "lon": 13.415681,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2826,12 +2826,12 @@
         "type": "position",
         "vehicleId": "veh-7",
         "routeId": "route-prenzlauer",
-        "lat": 52.539464,
-        "lon": 13.407471,
+        "lat": 52.538916,
+        "lon": 13.406946,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 3,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -2841,12 +2841,12 @@
         "type": "position",
         "vehicleId": "veh-8",
         "routeId": "route-charlottenburg",
-        "lat": 52.51293,
-        "lon": 13.310555,
+        "lat": 52.508414,
+        "lon": 13.32137,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2856,12 +2856,12 @@
         "type": "position",
         "vehicleId": "veh-1",
         "routeId": "route-mitte",
-        "lat": 52.522645,
-        "lon": 13.380981,
+        "lat": 52.522873,
+        "lon": 13.38353,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 4,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -2871,12 +2871,12 @@
         "type": "position",
         "vehicleId": "veh-2",
         "routeId": "route-kreuzberg",
-        "lat": 52.502027,
-        "lon": 13.394183,
+        "lat": 52.505278,
+        "lon": 13.403568,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
+        "stopsRemaining": 3,
+        "ts": 1787838369628
       }
     },
     {
@@ -2886,12 +2886,12 @@
         "type": "position",
         "vehicleId": "veh-3",
         "routeId": "route-prenzlauer",
-        "lat": 52.543294,
-        "lon": 13.416703,
+        "lat": 52.540337,
+        "lon": 13.427462,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2901,12 +2901,12 @@
         "type": "position",
         "vehicleId": "veh-4",
         "routeId": "route-charlottenburg",
-        "lat": 52.506956,
-        "lon": 13.318196,
+        "lat": 52.508118,
+        "lon": 13.320979,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 6,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2916,12 +2916,12 @@
         "type": "position",
         "vehicleId": "veh-5",
         "routeId": "route-mitte",
-        "lat": 52.522959,
-        "lon": 13.384383,
+        "lat": 52.523271,
+        "lon": 13.388051,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 4,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
@@ -2931,12 +2931,12 @@
         "type": "position",
         "vehicleId": "veh-6",
         "routeId": "route-kreuzberg",
-        "lat": 52.504225,
-        "lon": 13.414046,
+        "lat": 52.501809,
+        "lon": 13.416221,
         "heading": 0,
         "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
+        "stopsRemaining": 5,
+        "ts": 1787838369628
       }
     },
     {
@@ -2946,1707 +2946,1707 @@
         "type": "position",
         "vehicleId": "veh-7",
         "routeId": "route-prenzlauer",
-        "lat": 52.539023,
-        "lon": 13.407089,
+        "lat": 52.538704,
+        "lon": 13.406729,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 3,
-        "ts": 1787836090971
+        "ts": 1787838369628
       }
     },
     {
       "at": 34500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-8",
-        "routeId": "route-charlottenburg",
-        "lat": 52.512908,
-        "lon": 13.309807,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 36000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-1",
-        "routeId": "route-mitte",
-        "lat": 52.522676,
-        "lon": 13.380312,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 36000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-2",
-        "routeId": "route-kreuzberg",
-        "lat": 52.501377,
-        "lon": 13.393622,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 36000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-3",
-        "routeId": "route-prenzlauer",
-        "lat": 52.543162,
-        "lon": 13.415898,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 36000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.507131,
-        "lon": 13.318959,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 6,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 36000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-5",
-        "routeId": "route-mitte",
-        "lat": 52.522785,
-        "lon": 13.383574,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 36000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-6",
-        "routeId": "route-kreuzberg",
-        "lat": 52.504486,
-        "lon": 13.413489,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 36000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-7",
-        "routeId": "route-prenzlauer",
-        "lat": 52.538675,
-        "lon": 13.406791,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 36000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-8",
-        "routeId": "route-charlottenburg",
-        "lat": 52.512833,
-        "lon": 13.308998,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 37500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-1",
-        "routeId": "route-mitte",
-        "lat": 52.523528,
-        "lon": 13.388608,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 37500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-2",
-        "routeId": "route-kreuzberg",
-        "lat": 52.501085,
-        "lon": 13.392997,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 37500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-3",
-        "routeId": "route-prenzlauer",
-        "lat": 52.543063,
-        "lon": 13.415107,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 37500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.507426,
-        "lon": 13.319481,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 6,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 37500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-5",
-        "routeId": "route-mitte",
-        "lat": 52.522818,
-        "lon": 13.382955,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 37500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-6",
-        "routeId": "route-kreuzberg",
-        "lat": 52.504625,
-        "lon": 13.41279,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 37500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-7",
-        "routeId": "route-prenzlauer",
-        "lat": 52.538448,
-        "lon": 13.406358,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 37500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-8",
-        "routeId": "route-charlottenburg",
-        "lat": 52.512461,
-        "lon": 13.308214,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 39000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-1",
-        "routeId": "route-mitte",
-        "lat": 52.52236,
-        "lon": 13.379262,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 39000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-2",
-        "routeId": "route-kreuzberg",
-        "lat": 52.500759,
-        "lon": 13.392419,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 39000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-3",
-        "routeId": "route-prenzlauer",
-        "lat": 52.542872,
-        "lon": 13.414359,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 39000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.504995,
-        "lon": 13.311029,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 39000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-5",
-        "routeId": "route-mitte",
-        "lat": 52.522836,
-        "lon": 13.382537,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 39000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-6",
-        "routeId": "route-kreuzberg",
-        "lat": 52.504781,
-        "lon": 13.412233,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 39000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-7",
-        "routeId": "route-prenzlauer",
-        "lat": 52.537873,
-        "lon": 13.405924,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 39000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-8",
-        "routeId": "route-charlottenburg",
-        "lat": 52.51234,
-        "lon": 13.307647,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 40500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-1",
-        "routeId": "route-mitte",
-        "lat": 52.521945,
-        "lon": 13.37889,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 40500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-2",
-        "routeId": "route-kreuzberg",
-        "lat": 52.500464,
-        "lon": 13.392065,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 40500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-3",
-        "routeId": "route-prenzlauer",
-        "lat": 52.542676,
-        "lon": 13.413712,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 40500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.507904,
-        "lon": 13.320265,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 40500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-5",
-        "routeId": "route-mitte",
-        "lat": 52.522601,
-        "lon": 13.381912,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 40500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-6",
-        "routeId": "route-kreuzberg",
-        "lat": 52.504976,
-        "lon": 13.411761,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 40500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-7",
-        "routeId": "route-prenzlauer",
-        "lat": 52.537619,
-        "lon": 13.405734,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 40500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-8",
-        "routeId": "route-charlottenburg",
-        "lat": 52.512338,
-        "lon": 13.306905,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 42000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-1",
-        "routeId": "route-mitte",
-        "lat": 52.521995,
-        "lon": 13.378633,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 42000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-2",
-        "routeId": "route-kreuzberg",
-        "lat": 52.500011,
-        "lon": 13.391425,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 42000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-3",
-        "routeId": "route-prenzlauer",
-        "lat": 52.542636,
-        "lon": 13.41279,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 42000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.508008,
-        "lon": 13.320645,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 42000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-5",
-        "routeId": "route-mitte",
-        "lat": 52.522669,
-        "lon": 13.381094,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 42000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-6",
-        "routeId": "route-kreuzberg",
-        "lat": 52.505312,
-        "lon": 13.411087,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 42000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-7",
-        "routeId": "route-prenzlauer",
-        "lat": 52.537402,
-        "lon": 13.405285,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 42000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-8",
-        "routeId": "route-charlottenburg",
-        "lat": 52.5122,
-        "lon": 13.30608,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 43500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-1",
-        "routeId": "route-mitte",
-        "lat": 52.521848,
-        "lon": 13.378231,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 43500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-2",
-        "routeId": "route-kreuzberg",
-        "lat": 52.499719,
-        "lon": 13.390888,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 43500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-3",
-        "routeId": "route-prenzlauer",
-        "lat": 52.542393,
-        "lon": 13.412171,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 43500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.508386,
-        "lon": 13.321071,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 43500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-5",
-        "routeId": "route-mitte",
-        "lat": 52.522423,
-        "lon": 13.380592,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 43500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-6",
-        "routeId": "route-kreuzberg",
-        "lat": 52.505573,
-        "lon": 13.410304,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 43500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-7",
-        "routeId": "route-prenzlauer",
-        "lat": 52.542038,
-        "lon": 13.410003,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 43500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-8",
-        "routeId": "route-charlottenburg",
-        "lat": 52.512022,
-        "lon": 13.305252,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 45000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-1",
-        "routeId": "route-mitte",
-        "lat": 52.521415,
-        "lon": 13.37765,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 45000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-2",
-        "routeId": "route-kreuzberg",
-        "lat": 52.499218,
-        "lon": 13.390375,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 45000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-3",
-        "routeId": "route-prenzlauer",
-        "lat": 52.542125,
-        "lon": 13.411201,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 45000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.508448,
-        "lon": 13.321403,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 45000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-5",
-        "routeId": "route-mitte",
-        "lat": 52.523519,
-        "lon": 13.389059,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 45000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-6",
-        "routeId": "route-kreuzberg",
-        "lat": 52.505759,
-        "lon": 13.4099,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 45000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-7",
-        "routeId": "route-prenzlauer",
-        "lat": 52.536689,
-        "lon": 13.405694,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 45000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-8",
-        "routeId": "route-charlottenburg",
-        "lat": 52.51383,
-        "lon": 13.315416,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 46500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-1",
-        "routeId": "route-mitte",
-        "lat": 52.521511,
-        "lon": 13.3774,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 46500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-2",
-        "routeId": "route-kreuzberg",
-        "lat": 52.50419,
-        "lon": 13.397767,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 1,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 46500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-3",
-        "routeId": "route-prenzlauer",
-        "lat": 52.542071,
-        "lon": 13.41048,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 46500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.508622,
-        "lon": 13.321884,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 46500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-5",
-        "routeId": "route-mitte",
-        "lat": 52.522239,
-        "lon": 13.379451,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 46500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-6",
-        "routeId": "route-kreuzberg",
-        "lat": 52.505933,
-        "lon": 13.409163,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 4,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 46500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-7",
-        "routeId": "route-prenzlauer",
-        "lat": 52.536358,
-        "lon": 13.406211,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 46500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-8",
-        "routeId": "route-charlottenburg",
-        "lat": 52.511202,
-        "lon": 13.30465,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 48000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-1",
-        "routeId": "route-mitte",
-        "lat": 52.521094,
-        "lon": 13.37682,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 48000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-2",
-        "routeId": "route-kreuzberg",
-        "lat": 52.498957,
-        "lon": 13.390029,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 1,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 48000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-3",
-        "routeId": "route-prenzlauer",
-        "lat": 52.544018,
-        "lon": 13.420682,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 48000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.509131,
-        "lon": 13.322043,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 48000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-5",
-        "routeId": "route-mitte",
-        "lat": 52.52202,
-        "lon": 13.379145,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 48000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-6",
-        "routeId": "route-kreuzberg",
-        "lat": 52.503285,
-        "lon": 13.41739,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 48000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-7",
-        "routeId": "route-prenzlauer",
-        "lat": 52.535879,
-        "lon": 13.40687,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 48000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-8",
-        "routeId": "route-charlottenburg",
-        "lat": 52.510973,
-        "lon": 13.304395,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 49500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-1",
-        "routeId": "route-mitte",
-        "lat": 52.521155,
-        "lon": 13.376607,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 49500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-2",
-        "routeId": "route-kreuzberg",
-        "lat": 52.49892,
-        "lon": 13.390011,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 1,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 49500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-3",
-        "routeId": "route-prenzlauer",
-        "lat": 52.541551,
-        "lon": 13.409692,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 49500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.509242,
-        "lon": 13.322548,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 49500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-5",
-        "routeId": "route-mitte",
-        "lat": 52.522082,
-        "lon": 13.378733,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 49500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-6",
-        "routeId": "route-kreuzberg",
-        "lat": 52.505674,
-        "lon": 13.407499,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 49500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-7",
-        "routeId": "route-prenzlauer",
-        "lat": 52.535609,
-        "lon": 13.407402,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 49500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-8",
-        "routeId": "route-charlottenburg",
-        "lat": 52.510407,
-        "lon": 13.304336,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 51000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-1",
-        "routeId": "route-mitte",
-        "lat": 52.520797,
-        "lon": 13.376062,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 51000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-2",
-        "routeId": "route-kreuzberg",
-        "lat": 52.498915,
-        "lon": 13.38995,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 1,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 51000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-3",
-        "routeId": "route-prenzlauer",
-        "lat": 52.541337,
-        "lon": 13.40934,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 51000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.509599,
-        "lon": 13.322757,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 51000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-5",
-        "routeId": "route-mitte",
-        "lat": 52.521839,
-        "lon": 13.37827,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 51000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-6",
-        "routeId": "route-kreuzberg",
-        "lat": 52.505692,
-        "lon": 13.40688,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 51000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-7",
-        "routeId": "route-prenzlauer",
-        "lat": 52.535135,
-        "lon": 13.407765,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 51000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-8",
-        "routeId": "route-charlottenburg",
-        "lat": 52.51013,
-        "lon": 13.304106,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 52500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-1",
-        "routeId": "route-mitte",
-        "lat": 52.520604,
-        "lon": 13.375514,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 52500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-2",
-        "routeId": "route-kreuzberg",
-        "lat": 52.498864,
-        "lon": 13.389927,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 1,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 52500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-3",
-        "routeId": "route-prenzlauer",
-        "lat": 52.540736,
-        "lon": 13.408831,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 52500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.509868,
-        "lon": 13.323167,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 52500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-5",
-        "routeId": "route-mitte",
-        "lat": 52.521567,
-        "lon": 13.37796,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 52500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-6",
-        "routeId": "route-kreuzberg",
-        "lat": 52.50564,
-        "lon": 13.405998,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 52500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-7",
-        "routeId": "route-prenzlauer",
-        "lat": 52.535012,
-        "lon": 13.408368,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 52500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-8",
-        "routeId": "route-charlottenburg",
-        "lat": 52.50975,
-        "lon": 13.303906,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 54000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-1",
-        "routeId": "route-mitte",
-        "lat": 52.520517,
-        "lon": 13.375304,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 54000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-2",
-        "routeId": "route-kreuzberg",
-        "lat": 52.499071,
-        "lon": 13.390113,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 1,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 54000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-3",
-        "routeId": "route-prenzlauer",
-        "lat": 52.54049,
-        "lon": 13.408644,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 54000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.509997,
-        "lon": 13.323564,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 54000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-5",
-        "routeId": "route-mitte",
-        "lat": 52.521429,
-        "lon": 13.377319,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 54000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-6",
-        "routeId": "route-kreuzberg",
-        "lat": 52.505459,
-        "lon": 13.40537,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 54000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-7",
-        "routeId": "route-prenzlauer",
-        "lat": 52.534652,
-        "lon": 13.408982,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 54000,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-8",
-        "routeId": "route-charlottenburg",
-        "lat": 52.509263,
-        "lon": 13.303612,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 55500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-1",
-        "routeId": "route-mitte",
-        "lat": 52.520326,
-        "lon": 13.374767,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 55500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-2",
-        "routeId": "route-kreuzberg",
-        "lat": 52.499123,
-        "lon": 13.38989,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 1,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 55500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-3",
-        "routeId": "route-prenzlauer",
-        "lat": 52.540107,
-        "lon": 13.408111,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 55500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-4",
-        "routeId": "route-charlottenburg",
-        "lat": 52.510255,
-        "lon": 13.324009,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 5,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 55500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-5",
-        "routeId": "route-mitte",
-        "lat": 52.521201,
-        "lon": 13.376919,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 55500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-6",
-        "routeId": "route-kreuzberg",
-        "lat": 52.505471,
-        "lon": 13.404515,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 3,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 55500,
-      "event": "position",
-      "vehicle": {
-        "type": "position",
-        "vehicleId": "veh-7",
-        "routeId": "route-prenzlauer",
-        "lat": 52.534246,
-        "lon": 13.409471,
-        "heading": 0,
-        "speed": 28,
-        "stopsRemaining": 2,
-        "ts": 1787836090971
-      }
-    },
-    {
-      "at": 55500,
       "event": "position",
       "vehicle": {
         "type": "position",
         "vehicleId": "veh-8",
         "routeId": "route-charlottenburg",
         "lat": 52.508711,
-        "lon": 13.303317,
+        "lon": 13.321618,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 36000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-1",
+        "routeId": "route-mitte",
+        "lat": 52.52288,
+        "lon": 13.383,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 36000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-2",
+        "routeId": "route-kreuzberg",
+        "lat": 52.505317,
+        "lon": 13.402875,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 36000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-3",
+        "routeId": "route-prenzlauer",
+        "lat": 52.540645,
+        "lon": 13.426917,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 36000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.508333,
+        "lon": 13.321231,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 36000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-5",
+        "routeId": "route-mitte",
+        "lat": 52.523299,
+        "lon": 13.387562,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 36000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-6",
+        "routeId": "route-kreuzberg",
+        "lat": 52.502248,
+        "lon": 13.416538,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 36000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-7",
+        "routeId": "route-prenzlauer",
+        "lat": 52.538356,
+        "lon": 13.406167,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 36000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-8",
+        "routeId": "route-charlottenburg",
+        "lat": 52.508913,
+        "lon": 13.322158,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 37500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-1",
+        "routeId": "route-mitte",
+        "lat": 52.522841,
+        "lon": 13.382414,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 37500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-2",
+        "routeId": "route-kreuzberg",
+        "lat": 52.505125,
+        "lon": 13.402104,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 37500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-3",
+        "routeId": "route-prenzlauer",
+        "lat": 52.540953,
+        "lon": 13.426594,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 37500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.508711,
+        "lon": 13.32176,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 37500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-5",
+        "routeId": "route-mitte",
+        "lat": 52.523297,
+        "lon": 13.386996,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 37500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-6",
+        "routeId": "route-kreuzberg",
+        "lat": 52.502295,
+        "lon": 13.416999,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 37500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-7",
+        "routeId": "route-prenzlauer",
+        "lat": 52.537786,
+        "lon": 13.405835,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 37500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-8",
+        "routeId": "route-charlottenburg",
+        "lat": 52.509171,
+        "lon": 13.322579,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 39000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-1",
+        "routeId": "route-mitte",
+        "lat": 52.522782,
+        "lon": 13.381612,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 39000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-2",
+        "routeId": "route-kreuzberg",
+        "lat": 52.50503,
+        "lon": 13.401379,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 39000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-3",
+        "routeId": "route-prenzlauer",
+        "lat": 52.54124,
+        "lon": 13.426148,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 39000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.508961,
+        "lon": 13.321945,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 39000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-5",
+        "routeId": "route-mitte",
+        "lat": 52.523204,
+        "lon": 13.38641,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 39000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-6",
+        "routeId": "route-kreuzberg",
+        "lat": 52.502523,
+        "lon": 13.417356,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 39000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-7",
+        "routeId": "route-prenzlauer",
+        "lat": 52.537591,
+        "lon": 13.40557,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 39000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-8",
+        "routeId": "route-charlottenburg",
+        "lat": 52.509501,
+        "lon": 13.322785,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 40500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-1",
+        "routeId": "route-mitte",
+        "lat": 52.522714,
+        "lon": 13.381086,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 40500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-2",
+        "routeId": "route-kreuzberg",
+        "lat": 52.504787,
+        "lon": 13.400603,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 40500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-3",
+        "routeId": "route-prenzlauer",
+        "lat": 52.541501,
+        "lon": 13.425507,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 40500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.509096,
+        "lon": 13.322212,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 40500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-5",
+        "routeId": "route-mitte",
+        "lat": 52.523137,
+        "lon": 13.385684,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 40500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-6",
+        "routeId": "route-kreuzberg",
+        "lat": 52.502846,
+        "lon": 13.417675,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 40500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-7",
+        "routeId": "route-prenzlauer",
+        "lat": 52.537258,
+        "lon": 13.405292,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 40500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-8",
+        "routeId": "route-charlottenburg",
+        "lat": 52.509573,
+        "lon": 13.323015,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 42000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-1",
+        "routeId": "route-mitte",
+        "lat": 52.522431,
+        "lon": 13.380546,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 42000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-2",
+        "routeId": "route-kreuzberg",
+        "lat": 52.504773,
+        "lon": 13.39992,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 42000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-3",
+        "routeId": "route-prenzlauer",
+        "lat": 52.541812,
+        "lon": 13.424919,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 42000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.50924,
+        "lon": 13.322614,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 42000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-5",
+        "routeId": "route-mitte",
+        "lat": 52.523185,
+        "lon": 13.385085,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 42000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-6",
+        "routeId": "route-kreuzberg",
+        "lat": 52.499768,
+        "lon": 13.412217,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 42000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-7",
+        "routeId": "route-prenzlauer",
+        "lat": 52.541877,
+        "lon": 13.409985,
         "heading": 0,
         "speed": 28,
         "stopsRemaining": 2,
-        "ts": 1787836090971
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 42000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-8",
+        "routeId": "route-charlottenburg",
+        "lat": 52.510019,
+        "lon": 13.323566,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 43500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-1",
+        "routeId": "route-mitte",
+        "lat": 52.523547,
+        "lon": 13.388682,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 43500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-2",
+        "routeId": "route-kreuzberg",
+        "lat": 52.504662,
+        "lon": 13.399018,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 43500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-3",
+        "routeId": "route-prenzlauer",
+        "lat": 52.541879,
+        "lon": 13.424531,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 43500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.509565,
+        "lon": 13.322942,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 43500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-5",
+        "routeId": "route-mitte",
+        "lat": 52.522872,
+        "lon": 13.384486,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 43500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-6",
+        "routeId": "route-kreuzberg",
+        "lat": 52.503247,
+        "lon": 13.416891,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 43500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-7",
+        "routeId": "route-prenzlauer",
+        "lat": 52.536544,
+        "lon": 13.405953,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 2,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 43500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-8",
+        "routeId": "route-charlottenburg",
+        "lat": 52.510156,
+        "lon": 13.323735,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 45000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-1",
+        "routeId": "route-mitte",
+        "lat": 52.522162,
+        "lon": 13.37959,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 45000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-2",
+        "routeId": "route-kreuzberg",
+        "lat": 52.504567,
+        "lon": 13.398194,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 45000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-3",
+        "routeId": "route-prenzlauer",
+        "lat": 52.542167,
+        "lon": 13.42409,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 45000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.509929,
+        "lon": 13.323272,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 45000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-5",
+        "routeId": "route-mitte",
+        "lat": 52.522857,
+        "lon": 13.383884,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 45000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-6",
+        "routeId": "route-kreuzberg",
+        "lat": 52.503458,
+        "lon": 13.416318,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 45000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-7",
+        "routeId": "route-prenzlauer",
+        "lat": 52.536182,
+        "lon": 13.406484,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 2,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 45000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-8",
+        "routeId": "route-charlottenburg",
+        "lat": 52.510449,
+        "lon": 13.3241,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 46500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-1",
+        "routeId": "route-mitte",
+        "lat": 52.522039,
+        "lon": 13.378994,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 46500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-2",
+        "routeId": "route-kreuzberg",
+        "lat": 52.505893,
+        "lon": 13.408524,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 2,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 46500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-3",
+        "routeId": "route-prenzlauer",
+        "lat": 52.542414,
+        "lon": 13.423579,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 46500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.51001,
+        "lon": 13.323885,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 46500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-5",
+        "routeId": "route-mitte",
+        "lat": 52.522739,
+        "lon": 13.383251,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 46500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-6",
+        "routeId": "route-kreuzberg",
+        "lat": 52.503751,
+        "lon": 13.415791,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 46500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-7",
+        "routeId": "route-prenzlauer",
+        "lat": 52.535882,
+        "lon": 13.406844,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 2,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 46500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-8",
+        "routeId": "route-charlottenburg",
+        "lat": 52.510654,
+        "lon": 13.324644,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 48000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-1",
+        "routeId": "route-mitte",
+        "lat": 52.521962,
+        "lon": 13.378626,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 48000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-2",
+        "routeId": "route-kreuzberg",
+        "lat": 52.503907,
+        "lon": 13.397029,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 2,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 48000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-3",
+        "routeId": "route-prenzlauer",
+        "lat": 52.542675,
+        "lon": 13.423167,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 48000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.510457,
+        "lon": 13.324163,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 48000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-5",
+        "routeId": "route-mitte",
+        "lat": 52.522692,
+        "lon": 13.382579,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 48000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-6",
+        "routeId": "route-kreuzberg",
+        "lat": 52.50389,
+        "lon": 13.415116,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 48000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-7",
+        "routeId": "route-prenzlauer",
+        "lat": 52.535391,
+        "lon": 13.407642,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 2,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 48000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-8",
+        "routeId": "route-charlottenburg",
+        "lat": 52.510948,
+        "lon": 13.324886,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 49500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-1",
+        "routeId": "route-mitte",
+        "lat": 52.521788,
+        "lon": 13.378195,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 49500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-2",
+        "routeId": "route-kreuzberg",
+        "lat": 52.503582,
+        "lon": 13.39653,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 2,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 49500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-3",
+        "routeId": "route-prenzlauer",
+        "lat": 52.54321,
+        "lon": 13.422656,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 49500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.510584,
+        "lon": 13.324302,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 49500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-5",
+        "routeId": "route-mitte",
+        "lat": 52.522852,
+        "lon": 13.381846,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 49500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-6",
+        "routeId": "route-kreuzberg",
+        "lat": 52.504236,
+        "lon": 13.414557,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 49500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-7",
+        "routeId": "route-prenzlauer",
+        "lat": 52.53518,
+        "lon": 13.408089,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 2,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 49500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-8",
+        "routeId": "route-charlottenburg",
+        "lat": 52.507585,
+        "lon": 13.320107,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 51000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-1",
+        "routeId": "route-mitte",
+        "lat": 52.521561,
+        "lon": 13.377668,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 51000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-2",
+        "routeId": "route-kreuzberg",
+        "lat": 52.502972,
+        "lon": 13.395882,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 2,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 51000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-3",
+        "routeId": "route-prenzlauer",
+        "lat": 52.543424,
+        "lon": 13.422078,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 51000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.510912,
+        "lon": 13.324689,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 51000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-5",
+        "routeId": "route-mitte",
+        "lat": 52.52265,
+        "lon": 13.381209,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 51000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-6",
+        "routeId": "route-kreuzberg",
+        "lat": 52.504223,
+        "lon": 13.413792,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 51000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-7",
+        "routeId": "route-prenzlauer",
+        "lat": 52.534739,
+        "lon": 13.408688,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 2,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 51000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-8",
+        "routeId": "route-charlottenburg",
+        "lat": 52.511421,
+        "lon": 13.323848,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 52500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-1",
+        "routeId": "route-mitte",
+        "lat": 52.521376,
+        "lon": 13.377426,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 52500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-2",
+        "routeId": "route-kreuzberg",
+        "lat": 52.50286,
+        "lon": 13.395366,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 2,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 52500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-3",
+        "routeId": "route-prenzlauer",
+        "lat": 52.543534,
+        "lon": 13.421731,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 52500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.50751,
+        "lon": 13.320028,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 52500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-5",
+        "routeId": "route-mitte",
+        "lat": 52.522429,
+        "lon": 13.380452,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 52500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-6",
+        "routeId": "route-kreuzberg",
+        "lat": 52.504606,
+        "lon": 13.413135,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 52500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-7",
+        "routeId": "route-prenzlauer",
+        "lat": 52.534257,
+        "lon": 13.409026,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 2,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 52500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-8",
+        "routeId": "route-charlottenburg",
+        "lat": 52.511683,
+        "lon": 13.323182,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 54000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-1",
+        "routeId": "route-mitte",
+        "lat": 52.521357,
+        "lon": 13.376828,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 54000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-2",
+        "routeId": "route-kreuzberg",
+        "lat": 52.502206,
+        "lon": 13.394942,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 2,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 54000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-3",
+        "routeId": "route-prenzlauer",
+        "lat": 52.543847,
+        "lon": 13.42123,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 5,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 54000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.511241,
+        "lon": 13.324118,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 54000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-5",
+        "routeId": "route-mitte",
+        "lat": 52.523571,
+        "lon": 13.388888,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 54000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-6",
+        "routeId": "route-kreuzberg",
+        "lat": 52.504791,
+        "lon": 13.412525,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 54000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-7",
+        "routeId": "route-prenzlauer",
+        "lat": 52.534101,
+        "lon": 13.409731,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 2,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 54000,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-8",
+        "routeId": "route-charlottenburg",
+        "lat": 52.511624,
+        "lon": 13.322563,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 55500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-1",
+        "routeId": "route-mitte",
+        "lat": 52.521074,
+        "lon": 13.376416,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 55500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-2",
+        "routeId": "route-kreuzberg",
+        "lat": 52.502028,
+        "lon": 13.394437,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 2,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 55500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-3",
+        "routeId": "route-prenzlauer",
+        "lat": 52.540323,
+        "lon": 13.427516,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 55500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-4",
+        "routeId": "route-charlottenburg",
+        "lat": 52.511586,
+        "lon": 13.323595,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 55500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-5",
+        "routeId": "route-mitte",
+        "lat": 52.522326,
+        "lon": 13.379532,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 3,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 55500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-6",
+        "routeId": "route-kreuzberg",
+        "lat": 52.504884,
+        "lon": 13.41198,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 55500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-7",
+        "routeId": "route-prenzlauer",
+        "lat": 52.533632,
+        "lon": 13.410227,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 2,
+        "ts": 1787838369628
+      }
+    },
+    {
+      "at": 55500,
+      "event": "position",
+      "vehicle": {
+        "type": "position",
+        "vehicleId": "veh-8",
+        "routeId": "route-charlottenburg",
+        "lat": 52.512086,
+        "lon": 13.322118,
+        "heading": 0,
+        "speed": 28,
+        "stopsRemaining": 4,
+        "ts": 1787838369628
       }
     }
   ]

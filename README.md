@@ -153,6 +153,26 @@ npm install && npm run dev
 Replay mode feeds `replay-data/session.json` through the exact same UI code path
 as live mode — visually identical. Regenerate the log with `node scripts/gen-replay.js`.
 
+### Running the slide deck
+
+The talk's slides are built into the app at **`/slides`** (e.g.
+`https://dyrbnx68w809c.cloudfront.net/slides`). The last slide hands off straight
+into `/driver` in whatever mode the URL is in (`?live` or replay). Fully
+keyboard-driven, zero network calls, works offline.
+
+| Key | |
+|---|---|
+| `→` `Space` `PageDown` | next (walks the architecture build one box at a time) |
+| `←` `PageUp` | previous |
+| `Home` / `End` | first slide / the launch slide |
+| `1`–`9` | jump to slide N |
+| `Esc` | overview grid |
+| `F` | fullscreen · `H` hide chrome · `N` speaker notes · `T` timer |
+
+`?nofx` on the URL (or the OS "reduce motion" setting) disables all animation.
+The slide engine lives in `frontend/src/slides/` and is duplicated verbatim in
+the AML repo — same reasoning as `/shared`.
+
 ---
 
 ## Live demo script (~5 min)
