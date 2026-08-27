@@ -52,6 +52,12 @@ live segment at an AWS community event.
   the stack) to keep teardown scope minimal.
 - WebSocket auth is a shared short-lived demo token, not IAM/JWT.
 
+**One bootstrap resource outside the template:** `deploy.sh` creates a dedicated,
+private, un-versioned S3 bucket `fleet-demo-artifacts-<account>-<region>` to hold
+the packaged Lambda zips (a bucket must exist *before* CloudFormation can be
+packaged). It is **not** the shared `aws-sam-cli-managed-default` stack — this demo
+owns it, it is tagged `Demo=fleet`, and `teardown.sh` empties and deletes it.
+
 ## Repo layout
 
 | Path | What |
@@ -72,7 +78,9 @@ live segment at an AWS community event.
 ## Setup from a clean machine (~10–15 min)
 
 Prereqs: AWS CLI v2 (authenticated), AWS SAM CLI, Node 20+, and **Bedrock model
-access** for Claude 3.5 Sonnet enabled in your region (`eu-central-1` by default).
+access** enabled in your region. Default is the `eu-central-1` cross-region
+inference profile `eu.anthropic.claude-haiku-4-5-20251001-v1:0` (fast + cheap,
+ideal on stage); override `BedrockModelId` in `infra/samconfig.toml` for another.
 
 ```bash
 git clone https://github.com/WahidSaeed/agentic-vrp-fleet-demo
@@ -151,7 +159,7 @@ On-demand everything, no idle hourly charges:
 | DynamoDB (on-demand) | $0 | pennies |
 | Lambda | $0 | free-tier / pennies |
 | API Gateway WebSocket | $0 | pennies |
-| Bedrock (Claude 3.5 Sonnet) | $0 | ~$0.01–0.03 per proposal |
+| Bedrock (Claude Haiku 4.5) | $0 | well under $0.01 per proposal |
 | CloudWatch Logs (3-day retention) | negligible | negligible |
 
 **Estimate: under $2/month if left running, ~$0 once torn down.** The only resource

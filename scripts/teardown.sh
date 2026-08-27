@@ -8,12 +8,22 @@ cd "$(dirname "$0")/.."
 STACK="${STACK_NAME:-fleet-demo}"
 REGION="${AWS_REGION:-eu-central-1}"
 
+ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+ARTIFACT_BUCKET="${STACK}-artifacts-${ACCOUNT_ID}-${REGION}"
+
 echo ">> delete-stack $STACK"
 aws cloudformation delete-stack --stack-name "$STACK" --region "$REGION"
 
 echo ">> wait stack-delete-complete (this can take a few minutes)"
 if ! aws cloudformation wait stack-delete-complete --stack-name "$STACK" --region "$REGION"; then
   echo "!! stack delete did not complete cleanly - check the CloudFormation console" >&2
+fi
+
+# The dedicated artifact bucket is created by deploy.sh, not the template, so
+# remove it here (no versioning -> --force empties it in one pass).
+if aws s3api head-bucket --bucket "$ARTIFACT_BUCKET" 2>/dev/null; then
+  echo ">> removing artifact bucket $ARTIFACT_BUCKET"
+  aws s3 rb "s3://$ARTIFACT_BUCKET" --force
 fi
 
 echo ">> verifying no tagged resources remain"

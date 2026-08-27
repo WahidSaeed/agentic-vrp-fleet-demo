@@ -13,10 +13,12 @@ parallel = true
 stack_name = "fleet-demo"
 region = "eu-central-1"
 capabilities = "CAPABILITY_IAM"
-resolve_s3 = true
+# Artifact bucket is a dedicated per-demo bucket that deploy.sh creates and
+# teardown.sh removes (NOT the shared aws-sam-cli-managed-default stack).
+# deploy.sh passes --s3-bucket / --s3-prefix explicitly.
 confirm_changeset = false
 disable_rollback = false
-parameter_overrides = "DemoName=fleet-demo BedrockModelId=anthropic.claude-3-5-sonnet-20240620-v1:0"
+parameter_overrides = "DemoName=fleet-demo BedrockModelId=eu.anthropic.claude-haiku-4-5-20251001-v1:0"
 tags = "Project=aws-community-day-demo Demo=fleet"
 
 [default.delete.parameters]

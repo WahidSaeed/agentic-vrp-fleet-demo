@@ -57,8 +57,8 @@ function fallbackProposal(disruption) {
     summary:
       `Road ${disruption.kind === "breakdown" ? "blocked by a disabled vehicle" : "closed"} ahead; ` +
       `routing one block east around the affected segment and rejoining the planned route.`,
-    affectedStops: 2,
-    estDelayMin: 8,
+    affectedStops: 3,
+    estDelayMin: 12,
     detourWaypoints: [
       [lon + 0.0018, lat + 0.0004],
       [lon + 0.0020, lat + 0.0016],
