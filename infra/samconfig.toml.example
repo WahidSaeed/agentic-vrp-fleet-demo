@@ -18,7 +18,7 @@ capabilities = "CAPABILITY_IAM"
 # deploy.sh passes --s3-bucket / --s3-prefix explicitly.
 confirm_changeset = false
 disable_rollback = false
-parameter_overrides = "DemoName=fleet-demo BedrockModelId=eu.anthropic.claude-haiku-4-5-20251001-v1:0"
+parameter_overrides = "DemoName=fleet-demo BedrockModelId=eu.amazon.nova-lite-v1:0"
 tags = "Project=aws-community-day-demo Demo=fleet"
 
 [default.delete.parameters]

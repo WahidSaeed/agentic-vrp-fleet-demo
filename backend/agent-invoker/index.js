@@ -1,11 +1,15 @@
 // Synthetic conference demo - no real data.
-// Reasoning agent: given a disruption + current fleet state, ask Bedrock (Claude)
-// for a re-route proposal and a short plain-language rationale (the on-stage
-// "explainability trace"). Low-impact changes auto-apply; high-impact changes
-// are written to PendingApprovals for a human dispatcher to approve.
+// Reasoning agent: given a disruption + current fleet state, ask Bedrock (via the
+// model-agnostic Converse API) for a re-route proposal and a short plain-language
+// rationale (the on-stage "explainability trace"). Low-impact changes auto-apply;
+// high-impact changes are written to PendingApprovals for a human to approve.
+//
+// Default model is an Amazon Nova inference profile - no per-account "use case
+// details" form required. Swap BEDROCK_MODEL_ID for any Converse-capable model
+// (Nova, Claude once the form is submitted, Llama, Mistral) without code changes.
 const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
 const { DynamoDBDocumentClient, ScanCommand, PutCommand } = require("@aws-sdk/lib-dynamodb");
-const { BedrockRuntimeClient, InvokeModelCommand } = require("@aws-sdk/client-bedrock-runtime");
+const { BedrockRuntimeClient, ConverseCommand } = require("@aws-sdk/client-bedrock-runtime");
 const { randomUUID } = require("crypto");
 const { broadcast } = require("./broadcast");
 
@@ -20,10 +24,18 @@ const HIGH_IMPACT = (p) => (p.affectedStops ?? 0) > 2 || (p.estDelayMin ?? 0) > 
 
 const SYSTEM = `You are a fleet re-routing agent for a delivery logistics demo.
 All data is synthetic. You receive one disruption event and the current fleet
-state. Return ONLY compact JSON, no prose, matching:
-{"summary": string (<=2 sentences, plain language, why this re-route),
- "affectedStops": integer, "estDelayMin": integer,
- "detourWaypoints": [[lon,lat], ...] (2-4 points routing the vehicle around the problem)}`;
+state, and you propose a re-route for the affected vehicle.
+
+Return ONLY compact JSON, no prose, no markdown fences, matching exactly:
+{"summary": string, "affectedStops": integer, "estDelayMin": integer,
+ "detourWaypoints": [[lon,lat], ...]}
+
+- "summary": 2-3 short sentences a dispatcher can read aloud. Name the problem,
+  the detour you chose, and the trade-off (added delay, stops touched). Plain
+  language, no jargon. This is the on-stage explainability trace.
+- "detourWaypoints": 2-4 [lon,lat] points that route the vehicle clearly around
+  the disruption coordinate and back toward its planned loop.
+- "estDelayMin"/"affectedStops": your honest estimate for this detour.`;
 
 async function askBedrock(disruption, vehicles) {
   const user = `Disruption: ${JSON.stringify(disruption)}
@@ -32,20 +44,13 @@ Fleet state: ${JSON.stringify(vehicles.map((v) => ({
   })))}
 Propose a re-route for vehicle ${disruption.vehicleId}.`;
 
-  const body = {
-    anthropic_version: "bedrock-2023-05-31",
-    max_tokens: 500,
-    system: SYSTEM,
-    messages: [{ role: "user", content: user }],
-  };
-  const res = await bedrock.send(new InvokeModelCommand({
+  const res = await bedrock.send(new ConverseCommand({
     modelId: MODEL_ID,
-    contentType: "application/json",
-    accept: "application/json",
-    body: JSON.stringify(body),
+    system: [{ text: SYSTEM }],
+    messages: [{ role: "user", content: [{ text: user }] }],
+    inferenceConfig: { maxTokens: 500, temperature: 0.3 },
   }));
-  const parsed = JSON.parse(Buffer.from(res.body).toString("utf8"));
-  const text = parsed.content?.[0]?.text ?? "{}";
+  const text = res.output?.message?.content?.[0]?.text ?? "{}";
   const match = text.match(/\{[\s\S]*\}/);
   return JSON.parse(match ? match[0] : text);
 }

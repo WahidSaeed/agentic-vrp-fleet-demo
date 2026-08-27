@@ -17,11 +17,12 @@ Parameters:
     Description: Name prefix + tag value used for every resource and for teardown verification.
   BedrockModelId:
     Type: String
-    Default: eu.anthropic.claude-haiku-4-5-20251001-v1:0
+    Default: eu.amazon.nova-lite-v1:0
     Description: >
-      Bedrock model / inference-profile id for the reasoning agent. Must be enabled
-      in this account/region. EU cross-region inference profiles ("eu.anthropic...")
-      are the norm for current Claude models in eu-central-1.
+      Bedrock model / inference-profile id for the reasoning agent, called via the
+      model-agnostic Converse API. Amazon Nova needs no per-account "use case
+      details" form. Current models in eu-central-1 are invoked through EU
+      cross-region inference profiles ("eu.<provider>...").
   LogRetentionDays:
     Type: Number
     Default: 3
@@ -319,7 +320,7 @@ Resources:
               # Invoking via a cross-region inference profile needs access to both
               # the profile and the underlying foundation models in the region set.
               - Effect: Allow
-                Action: [bedrock:InvokeModel]
+                Action: [bedrock:InvokeModel, bedrock:Converse]
                 Resource:
                   - !Sub "arn:aws:bedrock:*::foundation-model/*"
                   - !Sub "arn:aws:bedrock:*:${AWS::AccountId}:inference-profile/*"

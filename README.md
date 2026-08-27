@@ -30,7 +30,7 @@ live segment at an AWS community event.
                                        │        │                                 │
                                        │        ▼                                 │
                                        │ Lambda: agent-invoker                    │
-                                       │   • Bedrock (Claude) → re-route + reason │
+                                       │   • Bedrock Converse → re-route + reason │
                                        │   • approval gate → PendingApprovals     │
                                        │   • broadcast agent_proposal (WS)        │
                                        │        │                                 │
@@ -79,7 +79,7 @@ owns it, it is tagged `Demo=fleet`, and `teardown.sh` empties and deletes it.
 
 Prereqs: AWS CLI v2 (authenticated), AWS SAM CLI, Node 20+, and **Bedrock model
 access** enabled in your region. Default is the `eu-central-1` cross-region
-inference profile `eu.anthropic.claude-haiku-4-5-20251001-v1:0` (fast + cheap,
+inference profile `eu.amazon.nova-lite-v1:0` (fast + cheap,
 ideal on stage); override `BedrockModelId` in `infra/samconfig.toml` for another.
 
 ```bash
@@ -159,7 +159,7 @@ On-demand everything, no idle hourly charges:
 | DynamoDB (on-demand) | $0 | pennies |
 | Lambda | $0 | free-tier / pennies |
 | API Gateway WebSocket | $0 | pennies |
-| Bedrock (Claude Haiku 4.5) | $0 | well under $0.01 per proposal |
+| Bedrock (Amazon Nova Lite) | $0 | well under $0.01 per proposal |
 | CloudWatch Logs (3-day retention) | negligible | negligible |
 
 **Estimate: under $2/month if left running, ~$0 once torn down.** The only resource
